@@ -148,7 +148,7 @@ export default function TechStack() {
         {/* backend development */}
         <div className="p-2 bg-gradient-to-b from-[#1e1d1d] to-[#1C1C1C] border-[1px] border-[#ffffff1d] w-[300px] sm:w-full h-[300px] rounded-lg relative before:content-[''] before:inline-block before:h-[1px] before:absolute before:top-[-1px] before:left-[9.4rem] before:w-20 before:bg-[linear-gradient(135deg,rgba(0,0,0,0.1),_rgb(53,160,54),_rgb(37,111,38),rgba(0,0,0,0.1))]">
           <div className="bg-[linear-gradient(rgb(36,_36,_36),_rgb(18_18_18_/_14%)_65.62%)] h-full w-[300px] sm:w-full rounded-lg relative shadow-[0px_0px_10px_#ffffff24]">
-            <div className="absolute top-[-40px] left-4">
+            <div className="absolute top-[-15px] left-4">
               <NodeJs />
             </div>
             <article className="p-4">
