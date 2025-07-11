@@ -36,7 +36,7 @@ export default function Page() {
         <motion.h2
           ref={section1.ref}
           {...fadeIn(section1.isInView, 1.1)}
-          className="sm:text-4xl md:text-6xl lg:text-[45px] 2xl:text-[65px] tracking-wider font-semibold leading-tight mt-5 lg:mt-10 bg-[linear-gradient(92.66deg,_#c4c3c3,_#eaeaea_19.79%,_#a2a1a1_33.33%,_#c6c6c6_70.31%,_#606060);] py-3"
+          className="sm:text-4xl sm:leading-[normal] lg:text-[45px] 2xl:text-[60px] tracking-wider font-semibold leading-tight mt-5 lg:mt-10 bg-[linear-gradient(92.66deg,_#c4c3c3,_#eaeaea_19.79%,_#a2a1a1_33.33%,_#c6c6c6_70.31%,_#606060);] py-3"
           style={{
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -46,11 +46,11 @@ export default function Page() {
           I&apos;m passionate about crafting visually stunning, memorable
           digital experiences.
         </motion.h2>
-        <div className="block lg:grid lg:grid-cols-2 my-10 lg:my-28">
+        <div className="block lmd:grid lmd:grid-cols-2 my-10 lg:my-28">
           <motion.div
             // ref={section1.ref}
             {...fadeIn(section1.isInView, 1.2)}
-            className="h-[450px] w-[350px] lg:h-[600px] lg:w-[400px] 2xl:h-[800px] 2xl:w-[600px]"
+            className="h-[450px] lmd:w-[350px] lg:h-[600px] lg:w-[400px] 2xl:h-[800px] 2xl:w-[600px]"
           >
             <PhotoFrame img="db.jpg" />
           </motion.div>
@@ -66,9 +66,9 @@ export default function Page() {
             </p>
             <motion.div
               {...fadeIn}
-              className="w-[350px] h-[450px] lg:h-[600px] lg:w-[400px] 2xl:h-[880px] 2xl:w-[600px]  pt-20"
+              className="lmd:w-[350px] h-[450px] lg:h-[600px] lg:w-[400px] 2xl:h-[880px] 2xl:w-[600px]  pt-20"
             >
-              <PhotoFrame img="photo.jpg" />
+              <PhotoFrame img="profile.jpg" />
             </motion.div>
           </motion.div>
           <motion.div
@@ -76,7 +76,7 @@ export default function Page() {
             {...fadeIn(section3.isInView, 0.4)}
             style={{ gridColumn: "1/3" }}
           >
-            <div className="w-[350px] px-4 mt-20 lg:mt:0 lg:-mt-12 lg:w-[400px] 2xl:w-[600px]">
+            <div className="lmd:w-[350px] px-4 mt-20 lg:mt:0 lg:-mt-12 lg:w-[400px] 2xl:w-[600px]">
               <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
                 My background in Software development
               </h3>
@@ -95,14 +95,14 @@ export default function Page() {
             {...fadeIn(section4.isInView, 0.4)}
             className="mt-10"
           >
-            <div className="h-[450px] w-[350px] lg:w-[400px] lg:h-[600px] 2xl:w-[600px] 2xl:h-[880px] mt-20 ">
+            <div className="h-[450px] lmd:w-[350px] lg:w-[400px] lg:h-[600px] 2xl:w-[600px] 2xl:h-[880px] mt-20 ">
               <PhotoFrame img="hackathon.jpg" />
             </div>
           </motion.div>
           <motion.div
             ref={section5.ref}
             {...fadeIn(section5.isInView, 0.4)}
-            className="mt-20 lg:mt-48 w-[350px] lg:w-[400px] 2xl:w-[600px]"
+            className="mt-20 lg:mt-48 lmd:w-[350px] lg:w-[400px] 2xl:w-[600px]"
           >
             <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
               Building Beyond Limits
@@ -126,7 +126,7 @@ export default function Page() {
             <motion.div
               ref={section6.ref}
               {...fadeIn(section6.isInView, 0.5)}
-              className="mt-20 w-[350px] h-[450px] lg:w-[400px] 2xl:w-[600px] lg:h-[350px] 2xl:h-[550px]"
+              className="mt-20 lmd:w-[350px] h-[450px] lg:w-[400px] 2xl:w-[600px] lg:h-[350px] 2xl:h-[550px]"
             >
               <PhotoFrame img="award.jpg" />
             </motion.div>
@@ -134,7 +134,7 @@ export default function Page() {
           <motion.div
             ref={section7.ref}
             {...fadeIn(section7.isInView, 0.5)}
-            className="mt-20 lg:-mt-16  w-[350px] lg:w-[400px] 2xl:w-[600px]"
+            className="mt-20 lg:-mt-16  lmd:w-[350px] lg:w-[400px] 2xl:w-[600px]"
             style={{ gridColumn: "1/3" }}
           >
             <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
@@ -150,16 +150,16 @@ export default function Page() {
           <motion.div
             ref={section8.ref}
             {...fadeIn(section8.isInView, 0.7)}
-            className="w-[350px] lg:-mt-16"
+            className="lmd:w-[350px] lg:-mt-16"
           >
-            <div className="mt-20 w-[350px] h-[450px] lg:w-[400px] lg:h-[600px] 2xl:w-[600px] 2xl:h-[880px]">
+            <div className="mt-20 lmd:w-[350px] h-[450px] lg:w-[400px] lg:h-[600px] 2xl:w-[600px] 2xl:h-[880px]">
               <PhotoFrame img="chess.JPG" />
             </div>
           </motion.div>
           <motion.div
             ref={section9.ref}
             {...fadeIn(section9.isInView, 0.8)}
-            className="mt-28 w-[350px] lg:w-[400px] 2xl:w-[600px]"
+            className="mt-28 lmd:w-[350px] lg:w-[400px] 2xl:w-[600px]"
           >
             <h3 className="lg-text[18px] 2xl:text-xl font-semibold">
               EUSSF{" "}
