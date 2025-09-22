@@ -48,8 +48,8 @@ export default function Footer() {
       <div className="2xl:max-w-[1350px] lg:max-w-[1000px] mx-auto py-10 sm:py-20 px-8 sm:px-0 ">
         <div>
           <div className="flex items-center gap-10 justify-center sm:justify-start flex-col sm:flex-row">
-            <motion.svg
-              className="size-[150px] stroke-[#ffffff8a] stroke-[3px] animate-infiniteDraw ml-[-10px]"
+            <svg
+              className="size-[100px] stroke-[#ffffff8a] stroke-[3px] ml-[-10px]"
               style={{
                 fillOpacity: 0,
                 strokeDasharray: 4500,
@@ -58,12 +58,12 @@ export default function Footer() {
               viewBox="0 0 448 512"
             >
               <path d="M91.3 76h186l-7 18.9h-179c-39.7 0-71.9 31.6-71.9 70.3v205.4c0 35.4 24.9 70.3 84 70.3V460H91.3C41.2 460 0 419.8 0 370.5V165.2C0 115.9 40.7 76 91.3 76zm229.1-56h66.5C243.1 398.1 241.2 418.9 202.2 459.3c-20.8 21.6-49.3 31.7-78.3 32.7v-51.1c49.2-7.7 64.6-49.9 64.6-75.3 0-20.1 .6-12.6-82.1-223.2h61.4L218.2 299 320.4 20zM448 161.5V460H234c6.6-9.6 10.7-16.3 12.1-19.4h182.5V161.5c0-32.5-17.1-51.9-48.2-62.9l6.7-17.6c41.7 13.6 60.9 43.1 60.9 80.5z" />
-            </motion.svg>
+            </svg>
 
-            <div className="text-white/90 text-[2rem] font-michroma h-20 sm:text-[4rem] flex gap-2 ml-[25px] sm:ml-0">
+            <div className="text-white/90 text-[2rem] font-michroma h-20 sm:text-[3rem] flex gap-2 ml-[25px] sm:ml-0">
               Let&apos;s{" "}
               <div className="sm:ml-4 inline-flex min-w-[190px] font-michroma h-16 ml-0 sm:min-w-[280px]">
-                <span className="font-michroma items-center text-white/90 text-[2rem] sm:text-[4rem] capitalize">
+                <span className="font-michroma items-center text-white/90 text-[2rem] sm:text-[3rem] capitalize">
                   {displayText}
                 </span>
                 <motion.span
@@ -73,16 +73,16 @@ export default function Footer() {
                     repeat: Infinity,
                     repeatType: "reverse",
                   }}
-                  className={`ml-1 font-michroma text-white/90 text-[2rem] sm:text-[4rem]`}
+                  className={`ml-1 font-michroma text-white/90 text-[2rem] sm:text-[3rem]`}
                 >
                   |
                 </motion.span>
               </div>
             </div>
           </div>
-          <div className="flex justify-between mt-10 gap-10">
+          <div className="flex gap-40 mt-10">
             <div className="flex flex-col gap-4">
-              <p className="text-lg">Main</p>
+              <p className="text-xs uppercase text-white/40">Main</p>
               <Link href={"/"} className="text-white/70 hover:text-white  ">
                 Projects
               </Link>
@@ -92,8 +92,10 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className="text-left text-lg sm:text-center">Contact</p>
-              <div className="flex gap-6 mt-4">
+              <p className="text-xs uppercase text-white/40">
+                Contact
+              </p>
+              <div className="grid grid-cols-2 gap-3 gap-x-6 mt-4 flex-col">
                 <a
                   href={"https://www.linkedin.com/in/yonas-workneh/"}
                   className="text-white/70 hover:text-white"
@@ -147,7 +149,7 @@ export default function Footer() {
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     role="img"
-                    className="icon w-[23px] sm:w-[31px] h-[23px] sm:h-[31px]"
+                    className="icon w-[23px] sm:w-[25px] h-[23px] sm:h-[25px]"
                     width="1em"
                     height="1em"
                     viewBox="0 0 24 24"
@@ -169,7 +171,7 @@ export default function Footer() {
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true"
                     role="img"
-                    className="icon w-[23px] sm:w-[31px] h-[23px] sm:h-[31px]"
+                    className="icon w-[23px] sm:w-[25px] h-[23px] sm:h-[25px]"
                     width="1em"
                     height="1em"
                     viewBox="0 0 512 512"
@@ -185,8 +187,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center flex-col items-center mt-10">
-          <p className="text-white/70">
+        <div className=" mt-14">
+          <p className="text-white/40 tracking-wider">
             &copy; 2025 Yonas Workneh. All rights reserved
           </p>
         </div>
