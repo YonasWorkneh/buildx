@@ -1,6 +1,7 @@
 // import { Link } from "lucide-react";
 import Link from "next/link";
 import { handleScroll } from "@/app/utils/util";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Nav({ active }: { active: string }) {
   return (
@@ -48,6 +49,21 @@ export default function Nav({ active }: { active: string }) {
         >
           <Link href={"#solution"} onClick={(e) => handleScroll(e, "solution")}>
             Solution
+          </Link>
+        </li>
+        <li
+          className={`hover:text-white transition font-tenor tracking-widest focus:text-white ${
+            active === "solution" ? "active" : ""
+          }`}
+          // onClick={(e) => handleScroll(e, "solution")}
+        >
+          <Link
+            href={"https://blackcube.com"}
+            target="_blank"
+            // onClick={(e) => handleScroll(e, "solution")}
+            className="flex gap-2 items-center"
+          >
+            View Project <ArrowUpRight size={15} />
           </Link>
         </li>
       </ul>

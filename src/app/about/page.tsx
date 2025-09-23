@@ -249,14 +249,14 @@ export default function Page() {
               className="mt-10 col-span-2"
             >
               <p className="text-white font-semibold text-3xl">
-                Thanks for Stopping by!
+                Thanks for Stopping by !
               </p>
               <Image
                 src={"/img/sign.png"}
                 alt="Yonas Workneh Signature"
                 width={100}
                 height={100}
-                className="w-40 h-20 mt-5"
+                className="w-32 h-14 mt-5"
               />
             </motion.div>
           </div>

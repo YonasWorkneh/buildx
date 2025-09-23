@@ -51,7 +51,13 @@ const MobileNav = ({
     }),
   };
 
-  const sections = ["overview", "highlights", "problem", "solution"];
+  const sections = [
+    "overview",
+    "highlights",
+    "problem",
+    "solution",
+    "view project",
+  ];
 
   // Add this scroll handler
   return (
@@ -86,15 +92,23 @@ const MobileNav = ({
                 {sections.map((section, i) => (
                   <motion.a
                     key={section}
-                    href={`#${section}`}
+                    href={`${
+                      section === "view project"
+                        ? "https://blackcube.com"
+                        : `#${section}`
+                    }`}
                     custom={i}
                     variants={itemVariants}
                     className={`block px-6 py-3 capitalize transition-colors
                       ${active === section ? "text-white" : "text-white/30"}
                       hover:bg-white/5`}
-                    onClick={(e) => handleScroll(e, section, setIsOpen)}
+                    onClick={(e) =>
+                      section !== "view project" &&
+                      handleScroll(e, section, setIsOpen)
+                    }
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
+                    target={section === "view project" ? "_blank" : "_self"}
                   >
                     <div className="flex items-center gap-3">
                       <div
