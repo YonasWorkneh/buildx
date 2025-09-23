@@ -36,7 +36,7 @@ export default function Curve({ children }: { children: ReactElement }) {
   return (
     <div>
       <div
-        style={{ opacity: dimensions.width === 0 ? 1 : 0 }}
+        style={{ opacity: dimensions.width === 0 ? 1 : 0.4 }}
         className="bg-black transition-[opacity_0s_linear_0.1s] fixed h-[calc(100vh+600px)] w-screen pointer-events-none left-0 top-0 z-50"
       />
       <motion.p

@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import Curve from "../components/Curve";
 import PhotoFrame from "../components/PhotoFrame";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
   const useScrollAnimation = () => {
@@ -30,13 +31,13 @@ export default function Page() {
   return (
     <Curve>
       <main className="px-4 sph:px-10 lg:px-0 lg:max-w-[1000px] 2xl:max-w-[1350px] mx-auto pt-32 lg:pt-36 2xl:pt-48 bg-[radial-gradient(circle_closest-corner_at_50%_0,#36363625,#0000)]">
-        <motion.h1 className="pt-[2px] uppercase text-sm lg:text-base 2xl:text-lg text-[#ffffff6a] before:contents-[''] before:inline-block before:size-[10px] lg:before:size-[15px] before:rounded-full tracking-widest before:bg-[#fff] before:shadow-[0px_0px_10px_#fff] relative before:absolute before:top-[0] before:translate-y-1/2 before:left-0 pl-5 lg:pl-10">
+        <motion.h1 className="pt-[2px] uppercase text-xs lg:text-sm 2xl:text-sm text-[#ffffff6a] before:contents-[''] before:inline-block before:size-[8px] lg:before:size-[11px] before:rounded-full tracking-widest before:bg-[#fff] before:shadow-[0px_0px_10px_#fff] relative before:absolute before:top-[0] before:translate-y-1/2 before:left-0 pl-5 lg:pl-7">
           About me
         </motion.h1>
         <motion.h2
           ref={section1.ref}
           {...fadeIn(section1.isInView, 1.1)}
-          className="sm:text-4xl sm:leading-[normal] lg:text-[45px] 2xl:text-[60px] tracking-wider font-semibold leading-tight mt-5 lg:mt-10 bg-[linear-gradient(92.66deg,_#c4c3c3,_#eaeaea_19.79%,_#a2a1a1_33.33%,_#c6c6c6_70.31%,_#606060);] py-3"
+          className="sm:text-4xl sm:leading-[normal] lg:text-[40px] 2xl:text-[55px] tracking-wider font-semibold leading-tight mt-5 lg:mt-10 bg-[linear-gradient(92.66deg,_#c4c3c3,_#eaeaea_19.79%,_#a2a1a1_33.33%,_#c6c6c6_70.31%,_#606060);] py-3"
           style={{
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -60,7 +61,7 @@ export default function Page() {
             // ref={section2.ref}
             {...fadeIn(section1.isInView, 1.3)}
           >
-            <p className="text-[15px] lg:text-[22px] 2xl:text-2xl">
+            <p className="text-[15px] lg:text-[16px] 2xl:text-[20px]">
               This is me &mdash; alongside some flicks from recent moments,
               captured with heart and a hint of story.
             </p>
@@ -80,7 +81,7 @@ export default function Page() {
               <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
                 My background in Software development
               </h3>
-              <p className="mt-5 text-[#ffffffae] text-[14px] 2xl:text-[20px]">
+              <p className="mt-5 text-[#ffffff81] text-[14px] 2xl:text-[18px]">
                 I started coding during the COVID lockdown, just looking for
                 something to do. What began as an escape from boredom quickly
                 turned into a passion before I even knew it. Each line of code
@@ -107,7 +108,7 @@ export default function Page() {
             <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
               Building Beyond Limits
             </h3>
-            <p className="mt-5 text-[#ffffffae] mb-10 text-[14px] 2xl:text-[20px]">
+            <p className="mt-5 text-[#ffffff81] mb-10 text-[14px] 2xl:text-[18px]">
               Hackathons have been more than competitions — Each challenge
               sharpened my skills, fueled my passion, and reminded me why I love
               building solutions that matter. <br /> <br /> Inclufi, a
@@ -140,7 +141,7 @@ export default function Page() {
             <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
               Hobbies & Interests
             </h3>
-            <p className="mt-5 text-[#ffffffae] mb-10 2xl:text-[20px] text-[14px]">
+            <p className="mt-5 text-[#ffffff81] mb-10 2xl:text-[18px] text-[14px]">
               When I&apos;m not coding, you&apos;ll often find me exploring new
               places, diving into a good book, or sharpening my skills over a
               game of competitive chess—a passion that&apos;s been close to my
@@ -167,7 +168,7 @@ export default function Page() {
                 (Ethiopian University Students Sports Festival)
               </span>
             </h3>
-            <p className="mt-5 text-[#ffffffae] mb-10 2xl:text-[20px] text-[14px]">
+            <p className="mt-5 text-[#ffffff81] mb-10 2xl:text-[18px] text-[14px]">
               Back in 2024, I had the honor of captaining my university chess
               team in the finals — a proud and defining moment in my journey
               both as a player and a leader. That same year, I also received
@@ -182,6 +183,57 @@ export default function Page() {
               <PhotoFrame img="chess.png" />
             </motion.div>
           </motion.div>
+
+          <div className="col-span-2 border-t border-[rgba(242,242,242,0.2)] mt-40 grid grid-cols-2 py-20 gap-20">
+            <motion.h1 className="pt-[2px] uppercase col-span-2 text-xs lg:text-sm 2xl:text-sm text-[#ffffff6a] before:contents-[''] before:inline-block before:size-[8px] lg:before:size-[11px] before:rounded-full tracking-widest before:bg-[#fff] before:shadow-[0px_0px_10px_#fff] relative before:absolute before:top-[0] before:translate-y-1/2 before:left-0 pl-5 lg:pl-7">
+              experience
+            </motion.h1>{" "}
+            <h2 className="text-[40px] font-semibold">YBS Market</h2>
+            <div>
+              <h3 className="text-[30px] font-semibold">
+                Senior Front-End Developer
+              </h3>
+              <p className="text-[#ffffff81]">07/&apos;24 - Present</p>
+              <p className="text-[#ffffffd5] mt-4 w-2/3">
+                I am leading a group of talented front-end developers and
+                currently working on an e-commerce platform.
+              </p>
+            </div>
+            <h2 className="text-[40px] font-semibold">Pluto Technologies</h2>
+            <div>
+              <h3 className="text-[30px] font-semibold">
+                Full-Stack Developer
+              </h3>
+              <p className="text-[#ffffff81]">04/&apos;22 - 05/&apos;24</p>
+              <p className="text-[#ffffffd5] mt-4 w-2/3">
+                I have spent much of my carrer here honning my skills and
+                growing as a developer.
+              </p>
+            </div>
+            <h2 className="text-[40px] font-semibold">Freelance</h2>
+            <div>
+              <h3 className="text-[30px] font-semibold">
+                Full-Stack & UI/UX Developer
+              </h3>
+              <p className="text-[#ffffff81]">04/&apos;21 - 06/&apos;22</p>
+              <p className="text-[#ffffffd5] mt-4 w-2/3">
+                I have spent much of my carrer here honning my skills and
+                growing as a developer.
+              </p>
+            </div>
+            <div className="mt-10 col-span-2">
+              <p className="text-white font-semibold text-3xl">
+                Thanks for Stopping by!
+              </p>
+              <Image
+                src={"/img/sign.png"}
+                alt="Yonas Workneh Signature"
+                width={100}
+                height={100}
+                className="w-40 h-20 mt-5"
+              />
+            </div>
+          </div>
         </div>
       </main>
     </Curve>
