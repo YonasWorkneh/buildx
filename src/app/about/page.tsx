@@ -28,6 +28,12 @@ export default function Page() {
   const section8 = useScrollAnimation();
   const section9 = useScrollAnimation();
   const section10 = useScrollAnimation();
+  const experienceTitle = useScrollAnimation();
+  const experience1 = useScrollAnimation();
+  const experience2 = useScrollAnimation();
+  const experience3 = useScrollAnimation();
+  const signature = useScrollAnimation();
+
   return (
     <Curve>
       <main className="px-4 sph:px-10 lg:px-0 lg:max-w-[1000px] 2xl:max-w-[1350px] mx-auto pt-32 lg:pt-36 2xl:pt-48 bg-[radial-gradient(circle_closest-corner_at_50%_0,#36363625,#0000)]">
@@ -49,24 +55,18 @@ export default function Page() {
         </motion.h2>
         <div className="block lmd:grid lmd:grid-cols-2 my-10 lg:my-28">
           <motion.div
-            // ref={section1.ref}
             {...fadeIn(section1.isInView, 1.2)}
             className="h-[450px] lmd:w-[350px] lg:h-[600px] lg:w-[400px] 2xl:h-[800px] 2xl:w-[600px]"
           >
             <PhotoFrame img="db.jpg" />
           </motion.div>
-          <motion.div
-            {...fadeIn}
-            className="mt-16"
-            // ref={section2.ref}
-            {...fadeIn(section1.isInView, 1.3)}
-          >
+          <motion.div {...fadeIn(section1.isInView, 1.3)} className="mt-16">
             <p className="text-[15px] lg:text-[16px] 2xl:text-[20px]">
               This is me &mdash; alongside some flicks from recent moments,
               captured with heart and a hint of story.
             </p>
             <motion.div
-              {...fadeIn}
+              {...fadeIn(section1.isInView, 1.4)}
               className="lmd:w-[350px] h-[450px] lg:h-[600px] lg:w-[400px] 2xl:h-[880px] 2xl:w-[600px]  pt-20"
             >
               <PhotoFrame img="profile.jpg" />
@@ -185,11 +185,21 @@ export default function Page() {
           </motion.div>
 
           <div className="col-span-2 border-t border-[rgba(242,242,242,0.2)] mt-40 grid grid-cols-2 py-20 gap-20">
-            <motion.h1 className="pt-[2px] uppercase col-span-2 text-xs lg:text-sm 2xl:text-sm text-[#ffffff6a] before:contents-[''] before:inline-block before:size-[8px] lg:before:size-[11px] before:rounded-full tracking-widest before:bg-[#fff] before:shadow-[0px_0px_10px_#fff] relative before:absolute before:top-[0] before:translate-y-1/2 before:left-0 pl-5 lg:pl-7">
+            <motion.h1
+              ref={experienceTitle.ref}
+              {...fadeIn(experienceTitle.isInView, 0.4)}
+              className="pt-[2px] uppercase col-span-2 text-xs lg:text-sm 2xl:text-sm text-[#ffffff6a] before:contents-[''] before:inline-block before:size-[8px] lg:before:size-[11px] before:rounded-full tracking-widest before:bg-[#fff] before:shadow-[0px_0px_10px_#fff] relative before:absolute before:top-[0] before:translate-y-1/2 before:left-0 pl-5 lg:pl-7"
+            >
               experience
-            </motion.h1>{" "}
-            <h2 className="text-[40px] font-semibold">YBS Market</h2>
-            <div>
+            </motion.h1>
+            <motion.h2
+              ref={experience1.ref}
+              {...fadeIn(experience1.isInView, 0.5)}
+              className="text-[40px] font-semibold"
+            >
+              YBS Market
+            </motion.h2>
+            <motion.div {...fadeIn(experience1.isInView, 0.6)}>
               <h3 className="text-[30px] font-semibold">
                 Senior Front-End Developer
               </h3>
@@ -198,30 +208,46 @@ export default function Page() {
                 I am leading a group of talented front-end developers and
                 currently working on an e-commerce platform.
               </p>
-            </div>
-            <h2 className="text-[40px] font-semibold">Pluto Technologies</h2>
-            <div>
+            </motion.div>
+            <motion.h2
+              ref={experience2.ref}
+              {...fadeIn(experience2.isInView, 0.7)}
+              className="text-[40px] font-semibold"
+            >
+              Pluto Technologies
+            </motion.h2>
+            <motion.div {...fadeIn(experience2.isInView, 0.8)}>
               <h3 className="text-[30px] font-semibold">
                 Full-Stack Developer
               </h3>
               <p className="text-[#ffffff81]">04/&apos;22 - 05/&apos;24</p>
               <p className="text-[#ffffffd5] mt-4 w-2/3">
-                I have spent much of my carrer here honning my skills and
-                growing as a developer.
+                I have spent much of my career here honing my skills and growing
+                as a developer.
               </p>
-            </div>
-            <h2 className="text-[40px] font-semibold">Freelance</h2>
-            <div>
+            </motion.div>
+            <motion.h2
+              ref={experience3.ref}
+              {...fadeIn(experience3.isInView, 0.9)}
+              className="text-[40px] font-semibold"
+            >
+              Freelance
+            </motion.h2>
+            <motion.div {...fadeIn(experience3.isInView, 1.0)}>
               <h3 className="text-[30px] font-semibold">
                 Full-Stack & UI/UX Developer
               </h3>
               <p className="text-[#ffffff81]">04/&apos;21 - 06/&apos;22</p>
               <p className="text-[#ffffffd5] mt-4 w-2/3">
-                I have spent much of my carrer here honning my skills and
-                growing as a developer.
+                I have spent much of my career here honing my skills and growing
+                as a developer.
               </p>
-            </div>
-            <div className="mt-10 col-span-2">
+            </motion.div>
+            <motion.div
+              ref={signature.ref}
+              {...fadeIn(signature.isInView, 1.1)}
+              className="mt-10 col-span-2"
+            >
               <p className="text-white font-semibold text-3xl">
                 Thanks for Stopping by!
               </p>
@@ -232,7 +258,7 @@ export default function Page() {
                 height={100}
                 className="w-40 h-20 mt-5"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </main>
