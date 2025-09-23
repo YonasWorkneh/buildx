@@ -184,7 +184,7 @@ export default function Page() {
             </motion.div>
           </motion.div>
 
-          <div className="col-span-2 border-t border-[rgba(242,242,242,0.2)] mt-40 grid grid-cols-2 py-20 gap-20">
+          <div className="md:col-span-2 border-t border-[rgba(242,242,242,0.2)] mt-40 md:grid md:grid-cols-2 py-20 gap-20">
             <motion.h1
               ref={experienceTitle.ref}
               {...fadeIn(experienceTitle.isInView, 0.4)}
@@ -195,16 +195,16 @@ export default function Page() {
             <motion.h2
               ref={experience1.ref}
               {...fadeIn(experience1.isInView, 0.5)}
-              className="text-[40px] font-semibold"
+              className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
             >
               YBS Market
             </motion.h2>
             <motion.div {...fadeIn(experience1.isInView, 0.6)}>
-              <h3 className="text-[30px] font-semibold">
+              <h3 className="text-[18px] md:text-[30px] font-semibold">
                 Senior Front-End Developer
               </h3>
               <p className="text-[#ffffff81]">07/&apos;24 - Present</p>
-              <p className="text-[#ffffffd5] mt-4 w-2/3">
+              <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
                 I am leading a group of talented front-end developers and
                 currently working on an e-commerce platform.
               </p>
@@ -212,16 +212,16 @@ export default function Page() {
             <motion.h2
               ref={experience2.ref}
               {...fadeIn(experience2.isInView, 0.7)}
-              className="text-[40px] font-semibold"
+              className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
             >
               Pluto Technologies
             </motion.h2>
             <motion.div {...fadeIn(experience2.isInView, 0.8)}>
-              <h3 className="text-[30px] font-semibold">
+              <h3 className="text-[18px] md:text-[30px] font-semibold">
                 Full-Stack Developer
               </h3>
               <p className="text-[#ffffff81]">04/&apos;22 - 05/&apos;24</p>
-              <p className="text-[#ffffffd5] mt-4 w-2/3">
+              <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
                 I have spent much of my career here honing my skills and growing
                 as a developer.
               </p>
@@ -229,26 +229,33 @@ export default function Page() {
             <motion.h2
               ref={experience3.ref}
               {...fadeIn(experience3.isInView, 0.9)}
-              className="text-[40px] font-semibold"
+              className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
             >
               Freelance
             </motion.h2>
             <motion.div {...fadeIn(experience3.isInView, 1.0)}>
-              <h3 className="text-[30px] font-semibold">
+              <h3 className="text-[18px] md:text-[30px] font-semibold">
                 Full-Stack & UI/UX Developer
               </h3>
               <p className="text-[#ffffff81]">04/&apos;21 - 06/&apos;22</p>
-              <p className="text-[#ffffffd5] mt-4 w-2/3">
-                I have spent much of my career here honing my skills and growing
-                as a developer.
+              <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
+                I have completed 10+ projects during this phase of my carrer.
+                <a
+                  href="https://blackcube.com"
+                  className="text-white underline mx-2"
+                  target="_blank"
+                >
+                  blackcube
+                </a>
+                was one I was most proud of.
               </p>
             </motion.div>
             <motion.div
               ref={signature.ref}
               {...fadeIn(signature.isInView, 1.1)}
-              className="mt-10 col-span-2"
+              className="mt-20 md:mt-10 col-span-2"
             >
-              <p className="text-white font-semibold text-3xl">
+              <p className="text-white font-semibold text-xl md:text-2xl lg:text-3xl">
                 Thanks for Stopping by !
               </p>
               <Image
