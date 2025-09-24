@@ -10,11 +10,12 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import Carousal from "./Carousal";
+// import Carousal from "./Card";
 import Link from "next/link";
 import Trex from "./Trex";
 import Tabs from "./Tabs";
-import Image from "next/image";
+import StackedCards from "./StackedCards";
+// import Image from "next/image";
 
 export default function Projects() {
   const [url, setUrl] = useState("yonasw.dev");
@@ -90,8 +91,11 @@ export default function Projects() {
       {hideTabContent ? (
         <Trex key={tab} />
       ) : (
-        <div className={`bg-[#1C1C1C] h-full w-full relative`}>
-          <header className="flex justify-between items-center p-8 w-full absolute top-1 z-50">
+        <div
+          className={`bg-[#1C1C1C] h-full w-full relative overflow-y-scroll`}
+          id="projects-scroll-container"
+        >
+          <header className="flex justify-between items-center p-8 w-full top-0 z-50 sticky bg-transparent">
             <div>
               <h1 className="font-medium text-white/60 font-michroma text-xs">
                 Yonas Workneh
@@ -122,7 +126,7 @@ export default function Projects() {
               </div>
             </div>
           </header>
-          <div className="relative p-3 border-t-[0px] h-[100px] mx-[200px] border-[1px] border-[#ffffff76] rounded-b-3xl bg-gradient-to-r from-[#f2f2f21a] via-[#f2f2f211] to-[#f2f2f21a] mb-5">
+          <div className="relative p-3 border-t-[0px] h-[100px] mt-[-110px] mx-[200px] border-[1px] border-[#ffffff76] rounded-b-3xl bg-gradient-to-r from-[#f2f2f21a] via-[#f2f2f211] to-[#f2f2f21a] mb-5">
             <Link href={"#"} className="group">
               <div className="relative rounded-b-3xl overflow-hidden flex items-center justify-center  bg-gradient-to-b from-[#2C2C2C] to-[#1C1C1C] group-hover:!bg-[radial-gradient(#ffbd5916,#ffbd5a1b,#00000077)] border-[1px]  border-[#ffffff76] border-t-0 h-full p-14 lg:px-[2rem] pt-0 pb-1 transition-all">
                 <div
@@ -136,148 +140,9 @@ export default function Projects() {
               </div>
             </Link>
           </div>
-          {<Carousal />}
-          <div className="container relative overflow-hidden bg-[#dfe1c8] w-[60%] mx-auto">
-            <div
-              className="slidder absolute top-[15vh] w-full h-full overflow-hidden perspective-200 "
-              style={{ perspectiveOrigin: "50% 100%" }}
-            >
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-              <div
-                className="card absolute top-1/2 left-1/2 w-1/2 h-[400px] overflow-hidden] bg-black"
-                style={{ transform: "translate3d(-50%,-50%,0)" }}
-              >
-                <Image
-                  src={"/img/kandake.png"}
-                  width={100}
-                  height={100}
-                  alt="prod-img"
-                  className="h-full w-full object-cover absolute opacity-75"
-                />
-                <h1 className="absolute top-[40%] text-center text-[6vw] uppercase text-[#dfe1c8]">
-                  Title
-                </h1>
-              </div>
-            </div>
+          <div className="h-full px-16">
+            <StackedCards scrollContainerId="projects-scroll-container" />
+            <div className="h-[50vh]" />
           </div>
         </div>
       )}

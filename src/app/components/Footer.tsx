@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   const [displayText, setDisplayText] = useState("");
-  const words = ["connect", "work", "grow"];
+  const [words] = useState(["connect", "work", "grow"]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function Footer() {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [index]);
+  }, [index, words]);
 
   return (
     <footer className="w-full border-t border-[#ffffff27]">
@@ -92,9 +92,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className="text-xs uppercase text-white/40">
-                Contact
-              </p>
+              <p className="text-xs uppercase text-white/40">Contact</p>
               <div className="grid grid-cols-2 gap-3 gap-x-6 mt-4 flex-col">
                 <a
                   href={"https://www.linkedin.com/in/yonas-workneh/"}

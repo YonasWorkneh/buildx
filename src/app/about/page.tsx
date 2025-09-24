@@ -5,6 +5,7 @@ import Curve from "../components/Curve";
 import PhotoFrame from "../components/PhotoFrame";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   const useScrollAnimation = () => {
@@ -192,13 +193,24 @@ export default function Page() {
             >
               experience
             </motion.h1>
-            <motion.h2
-              ref={experience1.ref}
-              {...fadeIn(experience1.isInView, 0.5)}
-              className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
-            >
-              YBS Market
-            </motion.h2>
+            <div>
+              <motion.h2
+                ref={experience1.ref}
+                {...fadeIn(experience1.isInView, 0.5)}
+                className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
+              >
+                YBS Market
+              </motion.h2>
+              <motion.a
+                {...fadeIn(experience1.isInView, 0.7)}
+                href="https://yandex.com/maps/org/ybs_software_development/160493912599/?ll=38.721921%2C8.933746&z=14"
+                target="_blank"
+                className="text-sm text-[#ffffffd5] cursor-pointer underline decoration-white flex gap-1 items-center"
+              >
+                yandex.com
+                <ArrowUpRight size={14} />
+              </motion.a>
+            </div>
             <motion.div {...fadeIn(experience1.isInView, 0.6)}>
               <h3 className="text-[18px] md:text-[30px] font-semibold">
                 Senior Front-End Developer
@@ -209,13 +221,23 @@ export default function Page() {
                 currently working on an e-commerce platform.
               </p>
             </motion.div>
-            <motion.h2
-              ref={experience2.ref}
-              {...fadeIn(experience2.isInView, 0.7)}
-              className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
-            >
-              Pluto Technologies
-            </motion.h2>
+            <div>
+              <motion.h2
+                ref={experience2.ref}
+                {...fadeIn(experience2.isInView, 0.7)}
+                className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
+              >
+                Pluto Technologies
+              </motion.h2>
+              <motion.a
+                {...fadeIn(experience2.isInView, 0.7)}
+                className="text-sm text-[#ffffffd5] cursor-pointer underline decoration-white flex gap-1 items-center"
+                target="_blank"
+                href="https://plutotechnologies.org"
+              >
+                plutotechnologies.org <ArrowUpRight size={14} />
+              </motion.a>
+            </div>
             <motion.div {...fadeIn(experience2.isInView, 0.8)}>
               <h3 className="text-[18px] md:text-[30px] font-semibold">
                 Full-Stack Developer
