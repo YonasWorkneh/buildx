@@ -51,7 +51,7 @@ export const projects = [
   },
   {
     src: "/img/sunshine.png",
-    url: "https://gta-vi-iota.vercel.app/",
+    url: "https://play.google.com/store/apps/details?id=com.temesgengetye.Sunshine",
     framework: "React Native",
     platform: "Mobile App",
     purpose: "Compound Managment",

@@ -132,7 +132,7 @@ export default function Projects() {
                 <div
                   className="h-[100px] mx-10 w-full lg:mx-0"
                   style={{
-                    background: "url('/img/gta-b.png')",
+                    background: "url('/img/auto-b.png')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

@@ -6,7 +6,7 @@ import Nav from "../components/Nav";
 import MobileNav from "../components/MobileNav";
 
 export default function Header({ active }: { active: string }) {
-  const title = "LegendX";
+  const title = "888Market";
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

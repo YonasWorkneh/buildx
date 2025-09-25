@@ -57,50 +57,66 @@ export default function Page() {
 
   return (
     <Curve>
-      <div className="p-2 sm:p-4 md:p-6 lg:p-8 bg-[radial-gradient(#a5a5d235,#08080ac0)] min-h-[100vh] relative">
-        <div className="max-w-[1440px] mx-auto">
-          <section className="pt-8 sm:pt-12 md:pt-16 min-h-[100vh]" ref={frame}>
-            <Header active={active} />
-            <Frame>
-              <Banner />
-            </Frame>
-          </section>
-          {/* overview */}
-          <motion.section
-            id="overview"
-            className="py-10 rounded-3xl my-28 px-4"
-            ref={(el) => {
-              overview.current = el;
-              overviewAnim.current = el;
-            }}
-            initial="initial"
-            animate={overviewAnimInView ? "enter" : "initial"}
-            variants={fadeIn}
+      <div className="min-h-[100vh] relative">
+        <div>
+          <section
+            className={`pt-8 sm:pt-12 md:pt-16 min-h-[100vh] bg-[radial-gradient(circle_farthest-side_at_50%_0,#00639b80,#0000)] relative`}
+            ref={frame}
           >
-            <Overview />
-          </motion.section>
+            <div className="max-w-[1440px] mx-auto">
+              <Header active={active} />
+              <Frame>
+                <Banner />
+              </Frame>
+            </div>
+            {/* noise */}
+            <div className="bg-[url('/img/noise.png')] absolute top-0 left-0 h-full w-full opacity-20" />
+          </section>
+          {/* mx-auto 1440px */}
+          <div className="max-w-[1440px] mx-auto p-2 sm:p-4 md:p-6 lg:p-8">
+            {/* overview */}
+            <motion.section
+              id="overview"
+              className="py-10 rounded-3xl my-28 px-4"
+              ref={(el) => {
+                overview.current = el;
+                overviewAnim.current = el;
+              }}
+              initial="initial"
+              animate={overviewAnimInView ? "enter" : "initial"}
+              variants={fadeIn}
+            >
+              <Overview />
+            </motion.section>
 
-          <section
-            id="highlights"
-            className="py-10 px-4 sm:px-8 md:px-20 lg:px-40 min-h-dvh bg-[#111111b4] rounded-[25px] border border-white/10"
-            ref={highlights}
-          >
-            <Highlight />
-          </section>
-          <section
-            id="problem"
-            className="py-10 rounded-3xl my-28 px-4"
-            ref={problem}
-          >
-            <Problem />
-          </section>
-          <section
-            id="solution"
-            className="rounded-3xl  my-16 sm:my-28 px-4"
-            ref={solution}
-          >
-            <Solution />
-          </section>
+            <section
+              id="highlights"
+              className="py-10 px-4 sm:px-8 md:px-20 lg:px-40 min-h-dvh rounded-[25px] border border-white/10 relative"
+              style={{
+                backgroundImage:
+                  "radial-gradient(circle closest-corner at 50% 0, #64d2ff0d, #0000)",
+                backgroundColor: "#15141418",
+              }}
+              ref={highlights}
+            >
+              <Highlight />
+              <div className="inset-0 bg-[linear-gradient(to_right,_#0000_15%,_#64d2ff80_50%,_#000_95%)] h-[1px] absolute" />
+            </section>
+            <section
+              id="problem"
+              className="py-10 rounded-3xl my-28 px-4"
+              ref={problem}
+            >
+              <Problem />
+            </section>
+            <section
+              id="solution"
+              className="rounded-3xl  my-16 sm:my-28 px-4"
+              ref={solution}
+            >
+              <Solution />
+            </section>
+          </div>
         </div>
       </div>
     </Curve>
