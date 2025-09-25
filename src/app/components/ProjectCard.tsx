@@ -2,7 +2,6 @@
 import { MoveRight } from "lucide-react";
 import { ReactElement, ElementType, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -50,7 +49,8 @@ export default function ProjectCard({
         }`}
       >
         <div
-          className={`relative rounded-3xl overflow-hidden  border-[1px] border-[#ffffff76] h-full pb-1 transition-all px-5 py-10 sm:p-14`}
+          className={`relative rounded-3xl overflow-hidden  border-[1px] border-[#ffffff76] h-full pb-1 px-5 py-10 sm:p-14`}
+          style={{ transition: "all 0.8s" }}
         >
           <header>
             <div className="flex justify-between">
@@ -58,7 +58,10 @@ export default function ProjectCard({
                 {title}
               </h2>
               {projLink && (
-                <button className="group-hover:translate-x-3 transition-transform">
+                <button
+                  className="group-hover:translate-x-3"
+                  style={{ transition: "transform 0.4s" }}
+                >
                   <MoveRight size={45} />
                 </button>
               )}
@@ -73,25 +76,17 @@ export default function ProjectCard({
           </header>
           <div
             className={`absolute bottom-0 left-0 px-3 sm:static sm:p-14 pb-0 sm:pb-10  h-[300px] sm:h-full w-full ${
-              projLink
-                ? "group-hover:translate-y-[-10px] transition-transform"
-                : ""
+              projLink ? "group-hover:translate-y-[-10px]" : ""
             }`}
+            style={{ transition: "transform 0.4s" }}
           >
             {children ? (
               children
             ) : (
-              // <div
-              //   className="w-full h-[300px] sm:h-full bg-cover bg-no-repeat rounded-xl py-2 border border-[#b4b0b047] shadow-[0_40px_50px_10px_#00000040]"
-              //   style={{ backgroundImage: `url(${imgSrc})` }}
-              // ></div>
-              <img
-                src={imgSrc || ""}
-                alt="alt image"
-                className="inline-block w-full h-[300px] rounded-xl border border-[#b4b0b047] shadow-[0_40px_50px_10px_#00000040] sm:h-full"
-                // width={100}
-                // height={100}
-              />
+              <div
+                className="w-full h-[300px] sm:h-full bg-cover bg-no-repeat rounded-xl py-2 border border-[#b4b0b047] shadow-[0_40px_50px_10px_#00000040]"
+                style={{ backgroundImage: `url(${imgSrc})` }}
+              ></div>
             )}
           </div>
         </div>

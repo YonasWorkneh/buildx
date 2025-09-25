@@ -25,6 +25,12 @@
   .legendx > div:first-child {
     transition: all 0.3s;
   }
+  .auto > div:first-child,
+  .blackcube > div:first-child,
+  .eth > div:first-child {
+    background: linear-gradient(190deg, #252525, var(--background));
+    transition: all 0.8s;
+  }
   .blackcube:hover > div:first-child {
     background: radial-gradient(#46454555, #00000097);
   }
@@ -35,8 +41,8 @@
     background: radial-gradient(circle at 50% 0, #7fcfff33, #0000 80%),
       radial-gradient(circle at 50% 0, #035, #0000);
   }
-  .gta:hover > div:first-child {
-    background: linear-gradient(#7689d53c, #da5ab438);
+  .auto:hover > div:first-child {
+    background: radial-gradient(circle at 50% 0, #ffffff4d, #0000);
   }
   .active {
     transition: all 0.5s ease;

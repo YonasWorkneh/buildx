@@ -40,16 +40,16 @@ export default function Featured() {
         />
         <ProjectCard
           as={Link}
-          title="Grand Theft Auto - VI"
+          title="Auto Dealer"
           description={
             <>
-              <span>2025</span> &mdash; A rockstar games legend landing page{" "}
-              <span className="text-3xl text-white">🎮</span>
+              <span>2025</span> &mdash; Car Dealerships & Auctions at the tips
+              of your finger
             </>
           }
-          bgGradient="gta"
+          bgGradient="auto"
           projLink="/projects/gta"
-          imgSrc="/img/gta.png"
+          imgSrc="/img/autod.png"
         />
         <ProjectCard
           as={"div"}
