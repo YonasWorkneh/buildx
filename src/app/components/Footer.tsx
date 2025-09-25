@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+// import { Phone } from "lucide-react";
 
 export default function Footer() {
   const [displayText, setDisplayText] = useState("");
@@ -94,6 +95,12 @@ export default function Footer() {
             <div>
               <p className="text-xs uppercase text-white/40">Contact</p>
               <div className="grid grid-cols-2 gap-3 gap-x-6 mt-4 flex-col">
+                {/* <a
+                  href={"tel:0986261979"}
+                  className="text-white/70 hover:text-white"
+                >
+                  <Phone className="icon w-[23px] sm:w-[31px] h-[23px] sm:h-[31px]" />
+                </a> */}
                 <a
                   href={"https://www.linkedin.com/in/yonas-workneh/"}
                   className="text-white/70 hover:text-white"

@@ -24,6 +24,7 @@ export const projects = [
     framework: "React Native",
     platform: "Mobile App",
     purpose: "Culinary exploration",
+    // gradient: "rgba(0,0,0,0.3),rgba(0,0,0,0.4)",
   },
   {
     src: "/img/legend.png",

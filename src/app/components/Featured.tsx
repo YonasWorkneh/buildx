@@ -28,16 +28,15 @@ export default function Featured() {
         />
         <ProjectCard
           as={Link}
-          title=" Legendx"
+          title="888 Market"
           description={
             <>
-              <span>2023, </span> &mdash; Shaping the future of legal services
-              online
+              <span>2023, </span> &mdash; E-commerce made simplified.
             </>
           }
           projLink="/projects/legendx"
-          imgSrc="/img/legendx.png"
-          bgGradient="legendx"
+          imgSrc="/img/eth.png"
+          bgGradient="eth"
         />
         <ProjectCard
           as={Link}

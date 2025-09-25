@@ -2,6 +2,7 @@
 import { MoveRight } from "lucide-react";
 import { ReactElement, ElementType, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -80,10 +81,17 @@ export default function ProjectCard({
             {children ? (
               children
             ) : (
-              <div
-                className="w-full h-[300px] sm:h-full bg-cover bg-no-repeat rounded-xl py-2"
-                style={{ backgroundImage: `url(${imgSrc})` }}
-              ></div>
+              // <div
+              //   className="w-full h-[300px] sm:h-full bg-cover bg-no-repeat rounded-xl py-2 border border-[#b4b0b047] shadow-[0_40px_50px_10px_#00000040]"
+              //   style={{ backgroundImage: `url(${imgSrc})` }}
+              // ></div>
+              <img
+                src={imgSrc || ""}
+                alt="alt image"
+                className="inline-block w-full h-[300px] rounded-xl border border-[#b4b0b047] shadow-[0_40px_50px_10px_#00000040] sm:h-full"
+                // width={100}
+                // height={100}
+              />
             )}
           </div>
         </div>
