@@ -6,7 +6,7 @@ import Nav from "../components/Nav";
 import MobileNav from "../components/MobileNav";
 
 export default function Header({ active }: { active: string }) {
-  const title = "GTA VI";
+  const title = "Auto_Dealer";
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -40,7 +40,7 @@ export default function Header({ active }: { active: string }) {
           }}
           className="text-center text-white/60 text-sm sm:text-base"
         >
-          <span>RockStar Games </span> &mdash; April 2024
+          <span>Dealership & Auction </span> &mdash; July &apos;25
         </motion.p>
       </div>
       <div className="hidden md:block">

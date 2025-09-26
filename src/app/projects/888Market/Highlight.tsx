@@ -75,13 +75,32 @@ export default function Highlight() {
           initial="initial"
           animate={img3InView ? "enter" : "initial"}
           variants={scaleUp()}
+          className="flex justify-between items-center gap-10 border border-white/10 rounded-xl mt-20 p-10 px-16 overflow-hidden bg-[radial-gradient(circle_farthest-side_at_50%_0,#00639b80,#0000)]"
         >
           <Image
-            src={"/img/users.png"}
+            src={"/img/prof-mob.png"}
+            alt="home-page"
+            width={500}
+            height={200}
+            className={`w-[550px] h-[500px] ${
+              img3InView ? "opacity-90" : "opacity-70"
+            } -translate-y-8`}
+          />
+          <Image
+            src={"/img/chat-mob.png"}
             alt="home-page"
             width={1000}
-            height={300}
-            className={`border border-white/10 rounded-xl w-full mt-20 ${
+            height={200}
+            className={` w-[550px] h-[500px] mt-14 ${
+              img3InView ? "opacity-90" : "opacity-70"
+            }`}
+          />
+          <Image
+            src={"/img/listing-mob.png"}
+            alt="home-page"
+            width={1000}
+            height={200}
+            className={`w-[550px] h-[500px] translate-y-16 ${
               img3InView ? "opacity-90" : "opacity-70"
             }`}
           />

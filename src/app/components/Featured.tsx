@@ -48,7 +48,7 @@ export default function Featured() {
             </>
           }
           bgGradient="auto"
-          projLink="/projects/gta"
+          projLink="/projects/autodealer"
           imgSrc="/img/autod.png"
         />
         <ProjectCard
@@ -114,30 +114,34 @@ export default function Featured() {
                   </span>
                 </Link>
                 <Link
-                  href="/projects/legendx"
-                  className="rounded-2xl flex flex-col items-center justify-center"
+                  href="/projects/888Market"
+                  className="rounded-full flex flex-col items-center justify-center"
                 >
                   <Image
-                    src="/img/legendx-logo.png"
-                    alt="legendx"
-                    className="rounded-xl w-[55px] h-[50px]"
+                    src="/img/ybs.png"
+                    alt="888"
+                    className="rounded-2xl w-[55px] h-[50px] contain"
                     width={56}
                     height={56}
                   />
-                  <span className="text-white text-xs mt-[2px]">Legendx</span>
+                  <span className="text-white text-xs mt-[2px]">888Market</span>
                 </Link>
                 <Link
                   href="/projects/gta"
-                  className="rounded-2xl flex flex-col items-center justify-center"
+                  className=" flex flex-col items-center justify-center"
                 >
-                  <Image
-                    src="/img/gta-vi.webp"
-                    alt="gta-vi"
-                    width={56}
-                    height={56}
-                    className="rounded-xl w-[55px] h-[50px]"
-                  />
-                  <span className="text-white text-xs mt-[2px]">GTA VI</span>
+                  <div className="bg-white rounded-2xl p-1">
+                    <Image
+                      src="/img/wheel.png"
+                      alt="gta-vi"
+                      width={56}
+                      height={56}
+                      className="rounded-xl w-[40px] h-[40px]"
+                    />
+                  </div>
+                  <span className="text-white text-xs mt-[2px]">
+                    AutoDealer
+                  </span>
                 </Link>
                 <div
                   className="rounded-2xl flex flex-col items-center justify-center"

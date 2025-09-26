@@ -1,11 +1,10 @@
 // import { Link } from "lucide-react";
 import Link from "next/link";
 import { handleScroll } from "@/app/utils/util";
-import { ArrowUpRight } from "lucide-react";
 
 export default function Nav({ active }: { active: string }) {
   return (
-    <nav className="fixed right-10 top-10 pt-20">
+    <nav className="fixed right-10 top-10 pt-20 z-50">
       <ul className="nav text-sm">
         <li className="uppercase">Contents</li>
         <li
