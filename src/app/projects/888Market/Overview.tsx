@@ -40,23 +40,14 @@ export default function Overview() {
       <div>
         <h1 className="font-tenor text-white text-xl">Overview</h1>
         <p className="text-white/40 font-tenor py-4">
-          LegendX is a modern, feature-rich gym management platform designed to
-          streamline operations, enhance member engagement, and improve
-          efficiency for gyms of all sizes. Built with Prisma and PostgreSQL, it
-          supports multi-gym management, allowing owners to oversee multiple
-          branches seamlessly. The platform offers automated membership
-          management, class scheduling, billing automation, and payment
-          integration to ensure a smooth experience for both administrators and
-          members. With AI-powered analytics, gym owners gain valuable insights
-          into member activity, retention rates, and overall business
-          performance. LegendX prioritizes security with role-based access
-          control, ensuring that owners, trainers, and members have access to
-          the right information. Designed with a modern and intuitive UI, it
-          simplifies complex gym operations, replacing outdated systems with an
-          all-in-one, scalable solution. Whether managing memberships, tracking
-          revenue, or organizing workouts, LegendX empowers fitness businesses
-          to operate more efficiently and provide a seamless experience for
-          their members.
+          888Market is a modern ecommerce platform inspired by Dubizzle,
+          tailored for Seychelles and African markets where online trade is
+          still emerging. It enables individuals and businesses to buy and sell
+          across multiple categories—electronics, fashion, vehicles, real
+          estate, and more—through a secure and user-friendly marketplace. With
+          trusted payments, delivery support, simple analytics, and verified
+          accounts, 888Market empowers communities to embrace ecommerce with
+          confidence and convenience.
         </p>
       </div>
     </div>

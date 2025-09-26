@@ -100,7 +100,7 @@ export default function Page() {
               ref={highlights}
             >
               <Highlight />
-              <div className="inset-0 bg-[linear-gradient(to_right,_#0000_15%,_#64d2ff80_50%,_#000_95%)] h-[1px] absolute" />
+              <div className="inset-0 bg-[linear-gradient(to_right,_#0000_15%,_#64d2ff80_50%,_#000_95%)] h-[1px] absolute mx-10 " />
             </section>
             <section
               id="problem"

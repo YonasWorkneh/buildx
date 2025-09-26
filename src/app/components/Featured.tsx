@@ -34,7 +34,7 @@ export default function Featured() {
               <span>2023, </span> &mdash; E-commerce made simplified.
             </>
           }
-          projLink="/projects/legendx"
+          projLink="/projects/888Market"
           imgSrc="/img/eth.png"
           bgGradient="eth"
         />

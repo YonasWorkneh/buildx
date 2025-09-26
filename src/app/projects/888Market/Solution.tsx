@@ -32,7 +32,14 @@ export default function Solution() {
                     before:shadow-[0_0_10px_1px_rgba(10, 62, 26, 0.88)] mt-10"
         >
           {/* Circular background gradient */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(10,62,26,0.15)_0%,rgba(10,46,26,0.05)_30%,rgba(20,20,20,0)_60%)]"></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 50% 0, #63e6e20d, #0000 60%)",
+              backgroundColor: "#f2f2f20a",
+            }}
+          ></div>
 
           {/* Glow effect overlay */}
           <div className="absolute top-0 left-[30%] right-[30%] h-[3px] blur-[2px] bg-gradient-to-r from-transparent via-[#0a3e1a] to-transparent opacity-60"></div>
@@ -43,8 +50,9 @@ export default function Solution() {
               KEY DISCOVERY
             </h2>
             <p className="text-white text-[14px] sm:text-xl md:text-2xl font-medium leading-tight md:leading-10 font-tenor">
-              Bringing a product like LegendX to life at this pace requires
-              tight collaboration, indvidual—speed alone wasn’t enough.
+              Understanding local needs, fostering trust, and more importantly
+              building with collaboration at every step was far more
+              significant.
             </p>
           </div>
         </motion.div>
@@ -93,18 +101,18 @@ export default function Solution() {
             }}
           >
             <p className="text-white/50 font-tenor">
-              While the primary objective was to build LegendX efficiently, I
-              quickly recognized the critical role of teamwork and
-              collaboration. Many projects in this space fail to deliver at
-              speed, but our team’s seamless communication and shared vision
-              were essential in overcoming this challenge. <br /> <br />{" "}
-              Effective collaboration was key—not just in completing tasks, but
-              in blending different perspectives and expertise. It’s not enough
-              to have individual skills; success comes from harmonizing efforts
-              to create something greater than the sum of its parts. The goal
-              wasn’t only to build a product quickly, but to craft a platform
-              that was the result of true teamwork, where every contribution
-              shaped a cohesive, high-performing solution.
+              While the primary objective was to build 888Market within a tight
+              deadline, I quickly realized that success depended on more than
+              speed—it relied on collaboration and shared vision. Many ecommerce
+              initiatives struggle to scale effectively, but our team’s clear
+              communication and unified goals allowed us to navigate challenges
+              with confidence.
+              <br /> <br /> Collaboration was the real driver—not just dividing
+              tasks, but bringing together diverse expertise to solve complex
+              problems. Individual skills mattered, but it was the harmony of
+              efforts that made the difference. The aim wasn’t only to launch a
+              marketplace quickly, but to craft a trusted, scalable platform
+              shaped by collective contribution and teamwork.
             </p>
           </motion.div>
         </motion.div>

@@ -1,6 +1,6 @@
 import { fadeInUp } from "@/app/utils/anim";
 import { motion, useInView } from "framer-motion";
-import { Clock, Lock } from "lucide-react";
+import { Clock, MonitorSmartphone } from "lucide-react";
 import React, { useRef } from "react";
 
 export default function Problem() {
@@ -41,7 +41,7 @@ export default function Problem() {
         className="text-[20px] mt-10 sm:text-[40px]"
         style={{ textShadow: "0px 0px 10px #ffffff64" }}
       >
-        Bringing efficient, digital control to gyms where it’s needed most.
+        Bringing secure, digital marketplaces where they’re needed most.
       </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 sm:mt-20">
         <p
@@ -52,18 +52,17 @@ export default function Problem() {
         </p>
         <div>
           <p className="text-white/50 font-tenor">
-            In today’s fitness industry, many gyms face challenges managing
-            memberships, tracking attendance, and maintaining effective
-            communication with clients. Existing systems are often fragmented,
-            outdated, or lack the flexibility to support multiple locations and
-            dynamic workflows. <br />
+            In many emerging markets, buyers and sellers struggle with limited
+            access to reliable ecommerce platforms. Existing solutions are often
+            fragmented, insecure, or not tailored to local needs, making online
+            trade difficult to scale. <br />
             <br />
             <span className="hidden sm:inline">
-              LegendX aims to revolutionize gym management with a powerful,
-              full-stack platform that offers a centralized dashboard, real-time
-              notifications, and seamless user experiences. The goal is to
-              empower gyms with scalable, intuitive, and efficient digital tools
-              to streamline operations, boost engagement, and support growth.
+              888Market aims to transform digital commerce with a modern,
+              all-in-one marketplace that offers secure payments, verified
+              listings, and a seamless user experience. The goal is to empower
+              communities with trusted, scalable, and accessible tools to
+              simplify trade, boost participation, and drive growth.
             </span>
           </p>
           <div className="mt-10">
@@ -79,10 +78,9 @@ export default function Problem() {
                 className="size-[60px] sm:size-[25px]"
               />
               <p className="text-white/60 text-sm sm:text-base">
-                With just five months, building LegendX demanded sharp
-                focus—balancing intuitive design, robust performance, and secure
-                infrastructure through disciplined prioritization and rapid
-                execution.
+                With less than five months to deliver, building such a
+                large-scale ecommerce platform was the most demanding challenge
+                yet..
               </p>
             </motion.div>
             <motion.div
@@ -92,14 +90,15 @@ export default function Problem() {
               variants={fadeInUp(0.3)}
               className="flex gap-[2rem] bg-[linear-gradient(#fb8b8b12,transparent)] px-2 sm:px-5 py-10 rounded-xl shadow-[0px_0px_10px_#ff55550d] border border-[#ffffff0f] mb-4"
             >
-              <Lock
+              <MonitorSmartphone
                 color="rgba(241, 80, 80, 0.779)"
-                className="size-[60px] sm:size-[25px]"
+                className="size-[60px] sm:size-[40px]"
+                size={25}
               />
               <p className="text-white/60 text-sm sm:text-base">
-                Keeping LegendX secure was a challenge, requiring strong
-                encryption, secure authentication, and thorough vulnerability
-                checks to eliminate loopholes.
+                Making 888Market fully responsive was a key challenge. Balancing
+                design with performance across devices required constant
+                refinement.
               </p>
             </motion.div>
             <motion.div
@@ -115,7 +114,7 @@ export default function Problem() {
                 viewBox="0 0 30 30"
                 strokeWidth="1.5"
                 stroke="rgba(241, 80, 80, 0.779)"
-                className="size-[60px] sm:size-[40px]"
+                className="size-[80px] sm:size-[60px]"
               >
                 <path
                   strokeLinecap="round"
@@ -126,8 +125,9 @@ export default function Problem() {
 
               {/* <Clock color="rgba(241, 80, 80, 0.779)" /> */}
               <p className="text-white/60 text-sm sm:text-base">
-                Making LegendX visually dynamic while ensuring fast load times
-                and smooth performance was one of the key challenge.
+                Balancing a visually engaging marketplace with fast load times
+                and smooth browsing was critical to ensuring accessibility for
+                diverse users and devices.
               </p>
             </motion.div>
           </div>

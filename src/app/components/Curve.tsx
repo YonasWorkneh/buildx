@@ -9,7 +9,7 @@ const routes = {
   "/about": "About",
   "/projects/blackcube": "Black Cube",
   "/projects/gta": "GTA VI",
-  "/projects/legendx": "LegendX",
+  "/projects/888Market": "888Market",
 };
 
 export default function Curve({ children }: { children: ReactElement }) {

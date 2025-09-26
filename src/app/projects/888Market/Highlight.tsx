@@ -44,7 +44,7 @@ export default function Highlight() {
           className="w-full"
         >
           <Image
-            src={"/img/legendx.png"}
+            src={"/img/eth.png"}
             alt="home-page"
             width={1000}
             height={300}
@@ -61,7 +61,7 @@ export default function Highlight() {
           variants={scaleUp()}
         >
           <Image
-            src={"/img/equipments.png"}
+            src={"/img/eth-pop.png"}
             alt="home-page"
             width={1000}
             height={300}
