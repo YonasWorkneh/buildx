@@ -107,12 +107,15 @@ export default function Solution() {
               initiatives struggle to scale effectively, but our team’s clear
               communication and unified goals allowed us to navigate challenges
               with confidence.
-              <br /> <br /> Collaboration was the real driver—not just dividing
-              tasks, but bringing together diverse expertise to solve complex
-              problems. Individual skills mattered, but it was the harmony of
-              efforts that made the difference. The aim wasn’t only to launch a
-              marketplace quickly, but to craft a trusted, scalable platform
-              shaped by collective contribution and teamwork.
+              <br /> <br />{" "}
+              <span className="hidden sm:block">
+                Collaboration was the real driver—not just dividing tasks, but
+                bringing together diverse expertise to solve complex problems.
+                Individual skills mattered, but it was the harmony of efforts
+                that made the difference. The aim wasn’t only to launch a
+                marketplace quickly, but to craft a trusted, scalable platform
+                shaped by collective contribution and teamwork.
+              </span>
             </p>
           </motion.div>
         </motion.div>
