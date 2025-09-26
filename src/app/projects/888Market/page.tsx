@@ -13,6 +13,8 @@ import Overview from "./Overview";
 import Highlight from "./Highlight";
 import Problem from "./Problem";
 import Solution from "./Solution";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   const [active, setActive] = useState(""); // existing state
@@ -58,7 +60,7 @@ export default function Page() {
   return (
     <Curve>
       <div className="min-h-[100vh] relative">
-        <div>
+        <div className="relative">
           <section
             className={`pt-8 sm:pt-12 md:pt-16 min-h-[100vh] bg-[radial-gradient(circle_farthest-side_at_50%_0,#00639b80,#0000)] relative`}
             ref={frame}
@@ -116,6 +118,15 @@ export default function Page() {
             >
               <Solution />
             </section>
+            <Link
+              href={"https://eth-lilac.vercel.app"}
+              target="_blank"
+              // onClick={(e) => handleScroll(e, "solution")}
+              className="border border-white/60 hover:border-white size-[70px] rounded-full flex flex-col text-[12px] items-center justify-center fixed bottom-24 right-5 sm:right-8 md:right-10 lg:right-14 shadow-[0px_0px_5px_#ffffff3a]"
+            >
+              <ArrowUpRight size={15} className="animate-bounce" />
+              Explore
+            </Link>
           </div>
         </div>
       </div>

@@ -51,13 +51,7 @@ const MobileNav = ({
     }),
   };
 
-  const sections = [
-    "overview",
-    "highlights",
-    "problem",
-    "solution",
-    "view project",
-  ];
+  const sections = ["overview", "highlights", "problem", "solution"];
 
   // Add this scroll handler
   return (

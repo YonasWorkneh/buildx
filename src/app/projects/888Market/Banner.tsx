@@ -19,7 +19,7 @@ export default function Banner() {
         </motion.div>
         <motion.div
           {...anim(fadeInUp(1.75, 0.8))}
-          className="absolute top-[65%] left-[-130px] sm:top-[30%] md:top-[150px] sm:right-0 md:right-[-100px] w-[180px] sm:w-[220px] md:w-[280px] lg:w-[280px] h-[400px]  p-2 sm:p-6 md:p-6  "
+          className="absolute top-[65%] left-[-130px] hidden sm:block sm:top-[30%] md:top-[150px] sm:right-0 md:right-[-100px] w-[180px] sm:w-[220px] md:w-[280px] lg:w-[280px] h-[400px]  p-2 sm:p-6 md:p-6  "
         >
           <Image
             src={"/img/eth-mob.png"}
