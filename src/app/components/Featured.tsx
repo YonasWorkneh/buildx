@@ -154,9 +154,9 @@ export default function Featured() {
                     }, 2000);
                   }}
                 >
-                  <div className="rounded-xl bg-[#000] py-1 w-[56px] h-[50px] flex items-center justify-center">
+                  <div className="rounded-2xl bg-[#000] py-1 w-[56px] h-[50px] flex items-center justify-center">
                     <svg
-                      className="size-[40px] stroke-[3px] fill-white"
+                      className="size-[35px] stroke-[3px] fill-white"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
