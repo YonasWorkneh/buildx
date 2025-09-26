@@ -42,7 +42,7 @@ export const projects = [
   },
   {
     src: "/img/kandake.png",
-    url: "/img/kandake.png",
+    url: "http://kbe.plutotechnologies.org/",
     framework: "WordPress",
     platform: "Web App",
     purpose: "Company site",

@@ -52,6 +52,7 @@ const Card = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
+        // onClick={() => window.open(src, "_blank")}
       >
         <div className="flex gap-8 w-full mt-[-30px] ml-5 justify-end">
           {purpose && <p className={badgeClass}>{purpose}</p>}

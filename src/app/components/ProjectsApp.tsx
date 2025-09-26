@@ -27,36 +27,43 @@ function ProjectsApp({
       title: "Auto_Dealer",
       imgSrc: "/img/auto.png",
       type: "all recents",
+      src: "https://autodealer-two.vercel.app",
     },
     {
       title: "888Market",
       imgSrc: "/img/ethmarket.png",
       type: "all recents",
+      src: "https://eth-lilac.vercel.app",
     },
     {
       title: "Emmas Kitchen",
       imgSrc: "/img/emma.png",
       type: "all",
+      src: "https://emmas-coffee.com",
     },
     {
       title: "Raja Giri",
       imgSrc: "/img/raja.png",
       type: "all",
+      src: "",
     },
     {
       title: "Sunshine",
       imgSrc: "/img/sunshine.png",
       type: "all mobile recent fullstack",
+      src: "https://play.google.com/store/apps/details?id=com.temesgengetye.Sunshine",
     },
     {
       title: "GTA VI",
       imgSrc: "/img/gta.png",
       type: "all recents",
+      src: "https://gta-vi-iota.vercel.app/",
     },
     {
       title: "YIG",
       imgSrc: "/img/yig.png",
       type: "all recents",
+      src: "https://yig1.plutotechnologies.org/",
     },
     {
       title: "Epicure",
@@ -72,16 +79,19 @@ function ProjectsApp({
       title: "Aromax",
       imgSrc: "/img/aromax.png",
       type: "all recents",
+      src: "https://aromaxtrading.com",
     },
     {
       title: "LegendX",
       imgSrc: "/img/legend.png",
       type: "all fullstack recents",
+      src: "https://legendxgym.com",
     },
     {
       title: "B&D Wedding",
       imgSrc: "/img/wedding.png",
       type: "all",
+      src: "https://betelhem-and-daniel-wedding.plutotechnologies.org/",
     },
     {
       title: "Gebeya",
@@ -92,6 +102,7 @@ function ProjectsApp({
       title: " Kandake",
       imgSrc: "/img/kandake.png",
       type: "all",
+      src: "http://kbe.plutotechnologies.org/",
     },
   ];
   const [filterKey, setFilterKey] = useState("all");
@@ -334,11 +345,7 @@ function ProjectsApp({
               {/* projects */}
               <div className="mt-10 mb-32">
                 {projectsFiltered.map((project, i) => (
-                  <ProjectCard
-                    key={i}
-                    imageUrl={project.imgSrc}
-                    label={project.title}
-                  />
+                  <ProjectCard key={i} {...project} />
                 ))}
               </div>
             </>
@@ -435,24 +442,37 @@ function LandingPage({ onExplore }: { onExplore: () => void }) {
   );
 }
 
-function ProjectCard({ imageUrl, label }: { imageUrl: string; label: string }) {
+function ProjectCard({
+  imgSrc,
+  title,
+  src,
+}: {
+  imgSrc: string;
+  title: string;
+  type: string;
+  src?: string;
+  key: number;
+}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  console.log(src);
 
   return (
-    <motion.div
+    <motion.a
+      href={src ? src : ""}
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="mb-10"
+      className="mb-10 cursor-pointer"
+      target="_blank"
     >
       <div
         className="w-full h-[200px] bg-cover bg-center bg-no-repeat rounded-md py-2 border border-[#ffffff1a]"
-        style={{ backgroundImage: `url(${imageUrl})` }}
+        style={{ backgroundImage: `url(${imgSrc})` }}
       ></div>
-      <p className="mt-1 text-white/70">{label}</p>
-    </motion.div>
+      <p className="mt-1 text-white/70">{title}</p>
+    </motion.a>
   );
 }
 
