@@ -32,7 +32,14 @@ export default function Solution() {
                     before:shadow-[0_0_10px_1px_rgba(10, 62, 26, 0.88)] mt-10"
         >
           {/* Circular background gradient */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(10,62,26,0.15)_0%,rgba(10,46,26,0.05)_30%,rgba(20,20,20,0)_60%)]"></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 50% 0, #63e6e20d, #0000 60%)",
+              backgroundColor: "#f2f2f20a",
+            }}
+          ></div>
 
           {/* Glow effect overlay */}
           <div className="absolute top-0 left-[30%] right-[30%] h-[3px] blur-[2px] bg-gradient-to-r from-transparent via-[#0a3e1a] to-transparent opacity-60"></div>

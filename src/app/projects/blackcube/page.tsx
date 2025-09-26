@@ -13,6 +13,8 @@ import Overview from "./Overview";
 import Highlight from "./Highlight";
 import Problem from "./Problem";
 import Solution from "./Solution";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Page() {
   const [active, setActive] = useState(""); // existing state
@@ -82,10 +84,16 @@ export default function Page() {
 
           <section
             id="highlights"
-            className="py-10 px-4 sm:px-8 md:px-20 lg:px-40 min-h-dvh bg-[#111111b4] rounded-[25px] border border-white/10"
+            className="py-10 px-4 sm:px-8 md:px-20 lg:px-40 min-h-dvh rounded-[25px] border border-white/10 relative"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle closest-corner at 50% 0, #64d2ff0d, #0000)",
+              backgroundColor: "#15141418",
+            }}
             ref={highlights}
           >
             <Highlight />
+            <div className="inset-0 bg-[linear-gradient(to_right,_#0000_15%,_#64d2ff80_50%,_#000_95%)] h-[1px] absolute mx-10 " />
           </section>
           <section
             id="problem"
@@ -101,6 +109,14 @@ export default function Page() {
           >
             <Solution />
           </section>
+          <Link
+            href={"https://autodealer-two.vercel.app"}
+            target="_blank"
+            className="border border-white/60 hover:border-white size-[70px] rounded-full flex flex-col text-[12px] items-center justify-center fixed bottom-24 right-5 sm:right-8 md:right-10 lg:right-14 shadow-[0px_0px_5px_#ffffff3a]"
+          >
+            <ArrowUpRight size={15} className="animate-bounce" />
+            Explore
+          </Link>
         </div>
       </div>
     </Curve>

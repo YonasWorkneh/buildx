@@ -8,7 +8,7 @@ const routes = {
   "/": "Projects",
   "/about": "About",
   "/projects/blackcube": "Black Cube",
-  "/projects/autodealer": "Auto-Dealer",
+  "/projects/autodealer": "Auto_Dealer",
   "/projects/888Market": "888Market",
 };
 

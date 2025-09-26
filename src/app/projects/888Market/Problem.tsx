@@ -1,6 +1,6 @@
 import { fadeInUp } from "@/app/utils/anim";
 import { motion, useInView } from "framer-motion";
-import { Clock, MonitorSmartphone } from "lucide-react";
+import { Clock, Languages, MonitorSmartphone } from "lucide-react";
 import React, { useRef } from "react";
 
 export default function Problem() {
@@ -108,26 +108,17 @@ export default function Problem() {
               variants={fadeInUp(0.5)}
               className="flex gap-[2rem] bg-[linear-gradient(#fb8b8b12,transparent)] px-2 sm:px-5 py-10 rounded-xl shadow-[0px_0px_10px_#ff55550d] border border-[#ffffff0f] mb-4"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 30 30"
-                strokeWidth="1.5"
-                stroke="rgba(241, 80, 80, 0.779)"
-                className="size-[80px] sm:size-[60px]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-                />
-              </svg>
+              <Languages
+                color="rgba(241, 80, 80, 0.779)"
+                className="size-[60px] sm:size-[40px]"
+                size={25}
+              />
 
               {/* <Clock color="rgba(241, 80, 80, 0.779)" /> */}
               <p className="text-white/60 text-sm sm:text-base">
-                Balancing a visually engaging marketplace with fast load times
-                and smooth browsing was critical to ensuring accessibility for
-                diverse users and devices.
+                Integrating Arabic support was a major challenge. Handling RTL
+                layouts and maintaining design consistency required careful
+                adjustments.
               </p>
             </motion.div>
           </div>

@@ -1,6 +1,6 @@
 import { fadeInUp } from "@/app/utils/anim";
 import { motion, useInView } from "framer-motion";
-import { Clock, Lock } from "lucide-react";
+import { Clock, Nfc } from "lucide-react";
 import React, { useRef } from "react";
 
 export default function Problem() {
@@ -41,7 +41,8 @@ export default function Problem() {
         className="text-[20px] mt-10 sm:text-[40px]"
         style={{ textShadow: "0px 0px 10px #ffffff64" }}
       >
-        Givin black cube secure digital pressence where it was most needed.
+        Giving clients a secure digital marketplace where trust meets
+        convenience.
       </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 sm:mt-20">
         <p
@@ -52,22 +53,21 @@ export default function Problem() {
         </p>
         <div>
           <p className="text-white/50 font-tenor">
-            In today&apos;s digital landscape, law firms struggle to establish a
-            strong online presence that effectively communicates their
-            expertise, credibility, and professionalism. Many legal websites are
-            outdated, lack engaging visuals, and fail to provide a seamless user
-            experience. Clients seeking legal assistance often face difficulty
-            navigating complex information, booking consultations, and accessing
-            essential resources. <br />
-            <br />
+            In today’s automotive market, dealerships and buyers face challenges
+            in connecting through traditional platforms. Many car websites are
+            outdated, lack engaging visuals, and fail to provide a smooth,
+            trustworthy online experience. Buyers often struggle to explore
+            vehicles with confidence, compare options, or participate in
+            auctions seamlessly, while dealers lack modern tools to showcase
+            their inventory effectively. <br /> <br />
             <span className="hidden sm:inline">
-              Black Cube, a modern law firm, requires a website that not only
-              reflects its reputation and authority but also enhances user
-              engagement through interactive design, smooth animations, and an
-              intuitive interface. The challenge is to create a
-              high-performance, visually compelling, and secure web platform
-              that delivers essential legal information, builds trust, and
-              streamlines client interactions.
+              Our auto dealership and auction platform was built to bridge this
+              gap—delivering a sleek, high-performance, and secure digital
+              marketplace. The goal was to create a visually striking and
+              intuitive website that enhances trust, simplifies navigation, and
+              energizes the car-buying journey with real-time auctions, advanced
+              search filters, and interactive features. This ensures both buyers
+              and dealers enjoy a seamless, engaging, and reliable experience.
             </span>
           </p>
           <div className="mt-10">
@@ -80,10 +80,10 @@ export default function Problem() {
             >
               <Clock
                 color="rgba(241, 80, 80, 0.779)"
-                className="size-[40px] sm:size-[25px]"
+                className="size-[40px] sm:size-[30px]"
               />
               <p className="text-white/60 text-sm sm:text-base">
-                With just three months, balancing interactive design,
+                With just four months, balancing interactive design,
                 performance, and security required strict prioritization and
                 efficiency.
               </p>
@@ -95,14 +95,14 @@ export default function Problem() {
               variants={fadeInUp(0.3)}
               className="flex gap-[2rem] bg-[linear-gradient(#fb8b8b12,transparent)] px-2 sm:px-5 py-10 rounded-xl shadow-[0px_0px_10px_#ff55550d] border border-[#ffffff0f] mb-4"
             >
-              <Lock
+              <Nfc
                 color="rgba(241, 80, 80, 0.779)"
-                className="size-[40px] sm:size-[25px]"
+                className="size-[40px] sm:size-[45px]"
               />
               <p className="text-white/60 text-sm sm:text-base">
-                Keeping the site secure was a challenge, requiring strong
-                encryption, safe logins, and making sure there are no loop
-                holes.
+                Effective communication was a challenge since the development
+                team never met in person, requiring extra effort to stay aligned
+                remotely.
               </p>
             </motion.div>
             <motion.div
@@ -115,10 +115,10 @@ export default function Problem() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 30 30"
+                viewBox="0 0 40 40"
                 strokeWidth="1.5"
                 stroke="rgba(241, 80, 80, 0.779)"
-                className="size-[40px] sm:size-[40px]"
+                className="size-[40px] sm:size-[45px]"
               >
                 <path
                   strokeLinecap="round"
@@ -129,8 +129,8 @@ export default function Problem() {
 
               {/* <Clock color="rgba(241, 80, 80, 0.779)" /> */}
               <p className="text-white/60 text-sm sm:text-base">
-                Making the site visually dynamic with GSAP and Three.js while
-                keeping it fast and smooth was a challenge.
+                Making the site visually dynamic with animations and interactive
+                elements while keeping it fast and smooth was a challenge.
               </p>
             </motion.div>
           </div>

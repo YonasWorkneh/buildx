@@ -26,11 +26,15 @@ export default function Highlight() {
   return (
     <div>
       <div className="text-center flex justify-center mb-1">
-        <div className="h-[60px] w-[60px] rounded-full bg-[radial-gradient(#4645452b,#00000038)] grid place-items-center border border-white/40 shadow-[0px_0px_10px_#ffffff37]">
-          <div className="w-[10px] h-[10px] bg-white rounded-full shadow-[0px_0px_10px_#fff] "></div>
-        </div>
+        <Image
+          src={"/img/highlight-icon.svg"}
+          alt="highlight icon svg"
+          width={100}
+          height={100}
+          className="w-14 h-auto"
+        />
       </div>
-      <h2 className="before:h-4 font-tenor font-semibold text-sm text-[#ffffff54] px-20 relative text-center uppercase tracking-widest mt-2">
+      <h2 className="before:h-4 font-tenor font-semibold text-xs text-[#ffffff83] px-20 relative text-center uppercase tracking-widest mt-7">
         Highlights
       </h2>
       <div className="mt-10">

@@ -7,30 +7,51 @@ export default function Overview() {
         <div>
           <h1 className="text-white text-xl font-tenor mb-2">My Role</h1>
           <p>
-            <span className="text-white font-tenor">Lead Frontend &mdash;</span>
+            <span className="text-white font-tenor">
+              Frontend Development &mdash;
+            </span>
             <span className="text-sm text-white/40">
               {" "}
               visual design and implementation.
             </span>
           </p>
         </div>
+        <div className="mt-4">
+          <h1 className="text-white text-xl font-tenor mb-2">Team</h1>{" "}
+          <p className=" text-white/40 font-tenor text-md">
+            Temesgen Getye, Mobile Development
+          </p>
+          <p className=" text-white/40 font-tenor text-md">
+            Eredey Seyoum, Backend Engineer
+          </p>
+          <p className=" text-white/40 font-tenor text-md">
+            Abel Teklay, DevOps Engineer
+          </p>
+        </div>
+        <div className="mt-4">
+          <h1 className="text-white text-xl font-tenor mb-2">
+            Timeline & status
+          </h1>
+          <p className=" text-white/40 font-tenor text-md">
+            4 months, to be Launched in Oct 2025
+          </p>
+        </div>
       </div>
       <div>
         <h1 className="font-tenor text-white text-xl">Overview</h1>
         <p className="text-white/40 font-tenor py-4">
-          GTA VI is Rockstar Games’ highly anticipated open-world
-          action-adventure video game, designed to push the boundaries of
-          realism, scale, and storytelling. Built with cutting-edge game engine
-          technology, it delivers a visually stunning and immersive experience,
-          featuring dynamic weather, lifelike AI, and seamless cityscapes. The
-          game’s narrative weaves together crime, culture, and chaos in a richly
-          detailed world, with expansive character development and interactive
-          missions.My task was to develop an advertisement website for GTA VI—a
-          title with massive anticipation and global reach. The goal was to
-          create a visually striking, immersive experience that reflects the
-          scale, energy, and innovation of the game itself. This meant designing
-          bold, cinematic visuals paired with smooth animations and interactive
-          elements to capture the essence of GTA VI’s world.{" "}
+          The car dealership and auction platform is designed to redefine how
+          people buy, sell, and explore vehicles. Built with a modern,
+          responsive interface, it delivers a sleek and immersive experience,
+          featuring real-time bidding, advanced search filters, and seamless
+          browsing across all devices. The platform blends trust, convenience,
+          and innovation, offering dynamic listings, secure transactions, and
+          smooth navigation. My task was to develop this website with the goal
+          of creating a visually appealing, user-friendly platform that mirrors
+          the excitement of live auctions while ensuring reliability for both
+          buyers and sellers. This meant designing clean, bold visuals paired
+          with smooth animations and interactive features to capture the energy
+          of car trading and the professionalism of a dealership.
         </p>
       </div>
     </div>

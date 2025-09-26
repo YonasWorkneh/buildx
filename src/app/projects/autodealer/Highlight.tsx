@@ -18,11 +18,15 @@ export default function Highlight() {
   return (
     <div>
       <div className="text-center flex justify-center mb-1">
-        <div className="h-[60px] w-[60px] rounded-full bg-[radial-gradient(#4645452b,#00000038)] grid place-items-center border border-white/40 shadow-[0px_0px_10px_#ffffff37]">
-          <div className="w-[10px] h-[10px] bg-white rounded-full shadow-[0px_0px_10px_#fff] "></div>
-        </div>
+        <Image
+          src={"/img/highlight-icon.svg"}
+          alt="highlight icon svg"
+          width={100}
+          height={100}
+          className="w-14 h-auto"
+        />
       </div>
-      <h2 className="before:h-4 font-tenor font-semibold text-sm text-[#ffffff54] px-20 relative text-center uppercase tracking-widest mt-2">
+      <h2 className="before:h-4 font-tenor font-semibold text-xs text-[#ffffff83] px-20 relative text-center uppercase tracking-widest mt-7">
         Highlights
       </h2>
       <div className="mt-10">
@@ -34,7 +38,7 @@ export default function Highlight() {
           className="w-full"
         >
           <Image
-            src={"/img/hero-scrolled.png"}
+            src={"/img/autod.png"}
             alt="home-page"
             width={1000}
             height={300}
@@ -51,7 +55,7 @@ export default function Highlight() {
           variants={scaleUp()}
         >
           <Image
-            src={"/img/poster.png"}
+            src={"/img/about.png"}
             alt="home-page"
             width={1000}
             height={300}
@@ -67,7 +71,7 @@ export default function Highlight() {
           variants={scaleUp()}
         >
           <Image
-            src={"/img/scrolled.png"}
+            src={"/img/auction.png"}
             alt="home-page"
             width={1000}
             height={300}
@@ -83,7 +87,7 @@ export default function Highlight() {
           variants={scaleUp()}
         >
           <Image
-            src={"/img/realm.png"}
+            src={"/img/modal.png"}
             alt="home-page"
             width={1000}
             height={300}
@@ -98,13 +102,32 @@ export default function Highlight() {
           initial="initial"
           animate={img4InView ? "enter" : "initial"}
           variants={scaleUp()}
+          className="flex justify-between items-center gap-10 border border-white/10 rounded-xl mt-20 p-6 sm:p-10 sm:px-16 overflow-scroll scrollbar-hide bg-[radial-gradient(circle_farthest-side_at_50%_0,_#fff3,_#00000030)]"
         >
           <Image
-            src={"/img/footer.png"}
+            src={"/img/hom.png"}
+            alt="home-page"
+            width={500}
+            height={200}
+            className={` w-[550px] h-[350px] md:w-[550px] md:h-[500px] ${
+              img3InView ? "opacity-90" : "opacity-70"
+            } -translate-y-8`}
+          />
+          <Image
+            src={"/img/sig.png"}
             alt="home-page"
             width={1000}
-            height={300}
-            className={`border border-white/10 rounded-xl w-full mt-20 ${
+            height={200}
+            className={` w-[550px] h-[350px] md:w-[550px] md:h-[500px] mt-14 ${
+              img3InView ? "opacity-90" : "opacity-70"
+            }`}
+          />
+          <Image
+            src={"/img/auc.png"}
+            alt="home-page"
+            width={1000}
+            height={200}
+            className={`w-[550px] h-[350px] md:w-[550px] md:h-[500px] translate-y-16 ${
               img3InView ? "opacity-90" : "opacity-70"
             }`}
           />

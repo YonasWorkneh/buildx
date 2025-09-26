@@ -32,7 +32,14 @@ export default function Solution() {
                     before:shadow-[0_0_10px_1px_rgba(10, 62, 26, 0.88)] mt-10"
         >
           {/* Circular background gradient */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(10,62,26,0.15)_0%,rgba(10,46,26,0.05)_30%,rgba(20,20,20,0)_60%)]"></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 50% 0, #63e6e20d, #0000 60%)",
+              backgroundColor: "#f2f2f20a",
+            }}
+          ></div>
 
           {/* Glow effect overlay */}
           <div className="absolute top-0 left-[30%] right-[30%] h-[3px] blur-[2px] bg-gradient-to-r from-transparent via-[#0a3e1a] to-transparent opacity-60"></div>
@@ -93,21 +100,24 @@ export default function Solution() {
             }}
           >
             <p className="text-white/50 font-tenor">
-              While the primary objective was to establish a secure digital
-              presence as quickly as possible, I couldn’t help but notice a
-              significant gap in existing websites within this field. Many lack
-              engaging user interaction and, more importantly, an elegant design
-              that captivates visitors—one that invites exploration rather than
-              mere functionality. <br /> <br /> However, elegance alone is not
-              enough. A truly effective website must strike a delicate balance:
-              it should impress and inspire curiosity without overshadowing its
-              primary purpose. For black cube, that meant ensuring the focus
-              remained on its credibility, expertise, and services, rather than
-              just aesthetics. The goal was not simply to create a visually
-              stunning website but to craft a digital presence that seamlessly
-              blends beauty with purpose—a platform that enhances marketing
-              efforts while maintaining clarity, professionalism, and ease of
-              access for clients.
+              While the primary objective was to deliver a secure and modern
+              digital marketplace quickly, We noticed a significant gap in
+              existing platforms within the automotive sector. Many lack
+              engaging interactivity and, more importantly, the polished design
+              that draws buyers and sellers in—encouraging exploration rather
+              than just serving basic functionality. <br />
+              <br />
+              <span className="hidden sm:block">
+                But design alone isn’t enough. A truly effective dealership and
+                auction platform must balance visual appeal with trust,
+                reliability, and performance. For this project, that meant
+                ensuring the spotlight remained on the cars, listings, and
+                transactions, rather than flashy visuals. The goal was not just
+                to create a sleek website, but to craft a platform that
+                seamlessly blends beauty with purpose—building confidence,
+                streamlining navigation, and making the car-buying journey both
+                exciting and effortless.
+              </span>
             </p>
           </motion.div>
         </motion.div>
