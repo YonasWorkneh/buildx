@@ -115,11 +115,24 @@ export default function Projects() {
             </nav>
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-4 font-michroma text-xs">
-                <button className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] text-white/60">
+                <button
+                  className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] text-white/60"
+                  onClick={() =>
+                    window.open("www.linkedin.com/in/yonas-workneh", "_blank")
+                  }
+                >
                   LinkedIn
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
-                <button className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] text-white/60">
+                <button
+                  className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] text-white/60"
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/12dHWKdHYz0wUt3TvNfPUeEKmP06icN2h/view?usp=sharing",
+                      "_blank"
+                    )
+                  }
+                >
                   Resume
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
