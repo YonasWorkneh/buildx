@@ -24,18 +24,38 @@ function ProjectsApp({
   const controls = useAnimation();
   const projects = [
     {
-      title: "Black Cube",
-      imgSrc: "/img/pjapp/bcube.png",
+      title: "Auto_Dealer",
+      imgSrc: "/img/auto.png",
+      type: "all recents",
+    },
+    {
+      title: "888Market",
+      imgSrc: "/img/ethmarket.png",
+      type: "all recents",
+    },
+    {
+      title: "Emmas Kitchen",
+      imgSrc: "/img/emma.png",
       type: "all",
     },
     {
       title: "Raja Giri",
-      imgSrc: "/img/pjapp/raja.png",
-      type: "all recents",
+      imgSrc: "/img/raja.png",
+      type: "all",
+    },
+    {
+      title: "Sunshine",
+      imgSrc: "/img/sunshine.png",
+      type: "all mobile recent fullstack",
     },
     {
       title: "GTA VI",
-      imgSrc: "/img/pjapp/gta.png",
+      imgSrc: "/img/gta.png",
+      type: "all recents",
+    },
+    {
+      title: "YIG",
+      imgSrc: "/img/yig.png",
       type: "all recents",
     },
     {
@@ -49,8 +69,13 @@ function ProjectsApp({
       type: "all fullstack",
     },
     {
+      title: "Aromax",
+      imgSrc: "/img/aromax.png",
+      type: "all recents",
+    },
+    {
       title: "LegendX",
-      imgSrc: "/img/pjapp/legendx.png",
+      imgSrc: "/img/legend.png",
       type: "all fullstack recents",
     },
     {
@@ -245,7 +270,7 @@ function ProjectsApp({
                   animate="visible"
                   className="w-[650px] h-[200px] rounded-lg relative z-30 scale-110"
                   style={{
-                    background: "url(/img/black-cube.png)",
+                    background: "url(/img/auto.png)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     scale: 1.1,
@@ -253,7 +278,7 @@ function ProjectsApp({
                 />
                 {[
                   { src: "/img/gta.png", dir: "right" },
-                  { src: "/img/legendx.png", dir: "right" },
+                  { src: "/img/legend.png", dir: "right" },
                 ].map((img, i) => (
                   <motion.div
                     key={i}

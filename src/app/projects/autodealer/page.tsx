@@ -62,7 +62,7 @@ export default function Page() {
       <div className="min-h-[100vh] relative">
         <div className="relative">
           <section
-            className={`pt-8 sm:pt-12 md:pt-16 min-h-[100vh] bg-[radial-gradient(circle_farthest-side_at_50%_0,_#fff3,_#00000030)] relative`}
+            className={`pt-8 sm:pt-12 md:pt-16 min-h-[100vh] bg-[radial-gradient(circle_farthest-side_at_50%_0,_#fff3,_#0000)] relative`}
             ref={frame}
           >
             <div className="max-w-[1440px] mx-auto">

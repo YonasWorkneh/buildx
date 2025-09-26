@@ -117,17 +117,19 @@ export default function Featured() {
                   href="/projects/888Market"
                   className="rounded-full flex flex-col items-center justify-center"
                 >
-                  <Image
-                    src="/img/ybs.png"
-                    alt="888"
-                    className="rounded-2xl w-[55px] h-[50px] contain"
-                    width={56}
-                    height={56}
-                  />
+                  <div className=" rounded-xl">
+                    <Image
+                      src="/img/ybs.png"
+                      alt="888"
+                      className="rounded-2xl w-[55px] h-[50px] contain bg-transparent"
+                      width={56}
+                      height={56}
+                    />
+                  </div>
                   <span className="text-white text-xs mt-[2px]">888Market</span>
                 </Link>
                 <Link
-                  href="/projects/gta"
+                  href="/projects/autodealer"
                   className=" flex flex-col items-center justify-center"
                 >
                   <div className="bg-white rounded-2xl p-1">
@@ -136,11 +138,11 @@ export default function Featured() {
                       alt="gta-vi"
                       width={56}
                       height={56}
-                      className="rounded-xl w-[40px] h-[40px]"
+                      className="w-[40px] h-[40px]"
                     />
                   </div>
                   <span className="text-white text-xs mt-[2px]">
-                    AutoDealer
+                    Auto Dealer
                   </span>
                 </Link>
                 <div
