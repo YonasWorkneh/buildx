@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import Cursor from "./components/Cursor";
 import { useCustomCursor } from "./components/Cursor";
+import { PhoneContextProvider } from "./contexts/PhoneContext";
 
 export default function RootLayout({
   children,
@@ -27,37 +28,41 @@ export default function RootLayout({
     [pathName]
   );
 
+  useEffect(() => console.log("layout mounted"), []);
+
   return (
     <html lang="en">
       <head>
         <title>Yonas Workneh &mdash; Software Engineer</title>
       </head>
       <body>
-        <Cursor />
-        <div
-          className={`bg-[#1C1C1C] text-white  ${
-            isLoading
-              ? "min-h-svh flex items-center justify-center"
-              : ""
-          } `}
-        >
-          {isLoading ? (
-            <Loader />
-          ) : (
-            <>
-              {!pathName.includes("projects") && <Header />}
-              <AnimatePresence mode="wait">
-                <motion.div
-                  onHoverStart={handleHoverStart}
-                  onHoverEnd={handleHoverEnd}
-                >
-                  {children}
-                </motion.div>
-              </AnimatePresence>
-              {!pathName.includes("projects") && <Footer />}
-            </>
-          )}
-        </div>
+        <PhoneContextProvider>
+          <>
+            <Cursor />
+            <div
+              className={`bg-[#1C1C1C] text-white  ${
+                isLoading ? "min-h-svh flex items-center justify-center" : ""
+              } `}
+            >
+              {isLoading ? (
+                <Loader />
+              ) : (
+                <>
+                  {!pathName.includes("projects") && <Header />}
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      onHoverStart={handleHoverStart}
+                      onHoverEnd={handleHoverEnd}
+                    >
+                      {children}
+                    </motion.div>
+                  </AnimatePresence>
+                  {!pathName.includes("projects") && <Footer />}
+                </>
+              )}
+            </div>
+          </>
+        </PhoneContextProvider>
       </body>
     </html>
   );

@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import StatusBar from "./StatusBar";
 import { ArrowUpLeft } from "lucide-react";
+import { usePhoneContext } from "../contexts/PhoneContext";
 
 interface PhoneProps {
   children: ReactNode;
@@ -38,9 +39,15 @@ export default function Phone({
   className = "",
   onClosePhone,
 }: PhoneProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const {
+    isOpen,
+    showContent,
+    showIndicator,
+    setIsOpen,
+    setShowContent,
+    setShowIndicator,
+  } = usePhoneContext();
   const [currentGreeting, setCurrentGreeting] = useState(0);
-  const [showContent, setShowContent] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [currentDate, setCurrentDate] = useState(new Date());
   const [isFirst, setIsFirst] = useState(true);
@@ -55,8 +62,6 @@ export default function Phone({
   const opacity = useTransform(y, [0, 200], [1, 0]);
   const scale = useTransform(y, [0, 200], [1, 0.8]);
   const controls = useAnimation();
-  const [showIndicator, setShowIndicator] = useState(true);
-
 
   const handleGreetingComplete = useCallback(() => {
     controls
@@ -102,7 +107,7 @@ export default function Phone({
     } else {
       closeBtn.current?.style.setProperty("width", "8px");
     }
-  }, [isOpen, controls, onClosePhone]);
+  }, [isOpen, controls, onClosePhone, setShowContent]);
 
   // Update time and date
   useEffect(() => {
