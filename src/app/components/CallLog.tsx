@@ -411,63 +411,70 @@ function Keypad() {
   useEffect(() => console.log(dial), [dial]);
 
   return (
-    <div className="min-h-[calc(100vh-140px)] grid grid-rows-[auto_1fr_auto]">
-      {/* Display */}
-      <div className="flex flex-col items-center justify-end pt-8 mt-[95px]">
-        <p className="text-3xl tracking-wider font-medium tabular-nums min-h-[2.25rem]">
-          {dial ? formatDial(dial) : ""}
-        </p>
-        <button
-          className={`text-[#2181ff] mt-1 ${dial.length ? "block" : "hidden"}`}
-        >
-          Add Number
-        </button>
-      </div>
+    <>
+      <StatusBar />
+      <div className="min-h-[calc(100vh-140px)] grid grid-rows-[auto_1fr_auto]">
+        {/* Display */}
+        <div className="flex flex-col items-center justify-end mt-14 h-24">
+          <p className="text-3xl tracking-wider font-medium tabular-nums h-9 flex items-center">
+            {dial ? formatDial(dial) : ""}
+          </p>
+          <div className="h-6 flex items-center">
+            <button
+              className={`text-[#2181ff] ${
+                dial.length ? "opacity-100" : "opacity-0"
+              } transition-opacity duration-200`}
+            >
+              Add Number
+            </button>
+          </div>
+        </div>
 
-      {/* Keypad */}
-      <div className="grid grid-cols-3 place-items-center gap-5 max-w-[270px] mx-auto self-center">
-        {keypad.map((key, i) => (
+        {/* Keypad */}
+        <div className="grid grid-cols-3 place-items-center gap-5 max-w-[270px] mx-auto self-center">
+          {keypad.map((key, i) => (
+            <button
+              type="button"
+              onClick={() => handlePress(key.number === "0" ? "0" : key.number)}
+              key={i}
+              className="flex flex-col items-center justify-center bg-[#3d3d3d] size-[70px] rounded-full text-4xl active:scale-95 transition-transform"
+            >
+              <span>{key.number}</span>
+              <span className="text-[10px]" style={{ lineHeight: "1rem" }}>
+                {key.letters.split("").join(" ")}
+              </span>
+            </button>
+          ))}
           <button
             type="button"
-            onClick={() => handlePress(key.number === "0" ? "0" : key.number)}
-            key={i}
-            className="flex flex-col items-center justify-center bg-[#3d3d3d] size-[70px] rounded-full text-4xl active:scale-95 transition-transform"
+            onClick={handleCall}
+            className="grid place-items-center col-start-2 col-end-3 bg-[#54BC5A] size-[70px] rounded-full text-3xl font-semibold active:scale-95 transition-transform"
+            aria-label="Call"
           >
-            <span>{key.number}</span>
-            <span className="text-[10px]" style={{ lineHeight: "1rem" }}>
-              {key.letters.split("").join(" ")}
-            </span>
+            <PhoneIcon className="fill-white text-2xl" />
           </button>
-        ))}
-        <button
-          type="button"
-          onClick={handleCall}
-          className="grid place-items-center col-start-2 col-end-3 bg-[#54BC5A] size-[70px] rounded-full text-3xl font-semibold active:scale-95 transition-transform"
-          aria-label="Call"
-        >
-          <PhoneIcon className="fill-white text-2xl" />
-        </button>
 
-        <button>
-          {dial.length ? (
-            <div
-              className="text-white bg-[#3d3d3d] w-[30px] rounded-[4px] flex items-center justify-center pl-[5px] text-lg h-[18px] text-center"
-              style={{
-                clipPath:
-                  "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)",
-              }}
-              onClick={() => setDial(dial.slice(0, dial.length - 1))}
-            >
-              <span className="-mt-[3px]">x</span>
-            </div>
-          ) : (
-            <></>
-          )}
-        </button>
+          <button>
+            {dial.length ? (
+              <div
+                className="text-white bg-[#3d3d3d] w-[30px] rounded-[4px] flex items-center justify-center pl-[5px] text-lg h-[18px] text-center"
+                style={{
+                  clipPath:
+                    "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)",
+                }}
+                onClick={() => setDial(dial.slice(0, dial.length - 1))}
+              >
+                <span className="-mt-[3px]">x</span>
+              </div>
+            ) : (
+              <></>
+            )}
+          </button>
+        </div>
+
+        {/* spacer for sticky bottom nav */}
+        <div className="h-16" />
       </div>
-
-      {/* spacer for sticky bottom nav */}
-      <div className="h-16" />
-    </div>
+    </>
   );
 }
