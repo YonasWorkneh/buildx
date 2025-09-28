@@ -193,12 +193,15 @@ export default function Footer() {
 
             <div className="flex flex-col gap-4">
               <p className="text-xs uppercase text-white/40">Address</p>
-              <Link href={"/"} className="text-white/70 hover:text-white  ">
+              <p className="text-white/70 hover:text-white">
                 Addis Ababa, Ethiopia
-              </Link>
-              <Link href={"/about"} className="text-white/70 hover:text-white">
-                +251986261979
-              </Link>
+              </p>
+              <a
+                href={"tel:+251986261979"}
+                className="text-white/70 hover:text-white"
+              >
+                +251 986 261 979
+              </a>
             </div>
           </div>
         </div>
