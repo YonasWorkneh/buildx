@@ -6,10 +6,12 @@ import StatusBar from "./StatusBar";
 import Image from "next/image";
 import { useState } from "react";
 import ProjectsApp from "./ProjectsApp";
+import CallLog from "./CallLog";
 export default function Featured() {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [isProjectsLoading, setIsProjectsLoading] = useState(true);
   const [isFirst, setIsFirst] = useState(true);
+  const [isCallOpened, setIsCallOpened] = useState(false);
   return (
     <>
       <div className="hidden sm:block px-5 sm:px-0">
@@ -93,6 +95,8 @@ export default function Featured() {
                 />
               )}
             </>
+          ) : isCallOpened ? (
+            <CallLog onClose={() => setIsCallOpened(false)} />
           ) : (
             <div className="">
               <StatusBar />
@@ -181,6 +185,8 @@ export default function Featured() {
                       alt="phone"
                       width={56}
                       height={56}
+                      onClick={() => setIsCallOpened(true)}
+                      className="focus:opacity-70"
                     />
                     <Image
                       src="/img/safari.jpg"
