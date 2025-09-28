@@ -193,8 +193,8 @@ export default function Footer() {
           </div>
         </div>
         <div className=" mt-14">
-          <p className="text-white/40 tracking-wider">
-            &copy; 2025 Yonas Workneh. All rights reserved
+          <p className="text-white/40 tracking-wider text-sm sm:text-base">
+            &copy; 2025 Yonas Workneh. All rights reserved.
           </p>
         </div>
       </div>
