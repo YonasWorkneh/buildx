@@ -81,7 +81,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex gap-40 mt-10">
+          <div className="flex gap-x-32 gap-y-4 mt-10 flex-wrap">
             <div className="flex flex-col gap-4">
               <p className="text-xs uppercase text-white/40">Main</p>
               <Link href={"/"} className="text-white/70 hover:text-white  ">
@@ -189,6 +189,16 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <p className="text-xs uppercase text-white/40">Address</p>
+              <Link href={"/"} className="text-white/70 hover:text-white  ">
+                Addis Ababa, Ethiopia
+              </Link>
+              <Link href={"/about"} className="text-white/70 hover:text-white">
+                +251986261979
+              </Link>
             </div>
           </div>
         </div>
