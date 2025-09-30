@@ -6,8 +6,8 @@ import anim, { fadeInUp } from "@/app/utils/anim";
 export default function Banner() {
   return (
     <div className="h-full w-full flex items-center justify-center py-2 sm:py-4 px-2 sm:px-4">
-      <div className="relative w-full max-w-[800px]">
-        <motion.div {...anim(fadeInUp(1.5, 0.8))}>
+      <div className="relative sm:w-full max-w-[800px]">
+        <motion.div {...anim(fadeInUp(1.5, 0.8))} className="hidden sm:block">
           <Image
             src={"/img/eth.png"}
             alt="home"
@@ -19,14 +19,14 @@ export default function Banner() {
         </motion.div>
         <motion.div
           {...anim(fadeInUp(1.75, 0.8))}
-          className="absolute top-[65%] left-[-130px] hidden sm:block sm:top-[30%] md:top-[150px] sm:right-0 md:right-[-100px] w-[180px] sm:w-[220px] md:w-[280px] lg:w-[280px] h-[400px]  p-2 sm:p-6 md:p-6  "
+          className="sm:absolute sm:top-[65%] sm:left-[-130px] md:top-[150px] sm:right-0 md:right-[-100px] h-auto sm:w-[220px] md:w-[280px] lg:w-[280px] sm:h-[400px]  p-2 sm:p-6 md:p-6  "
         >
           <Image
             src={"/img/eth-mob.png"}
             alt="eth-mobile ui"
             width={100}
             height={100}
-            className="h-[410px] w-[280px]"
+            className="h-[520px] w-[280px] sm:h-[410px]"
           />
         </motion.div>
         <motion.div

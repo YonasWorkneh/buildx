@@ -105,16 +105,19 @@ export default function Solution() {
               significant gap in existing websites within this field. Many lack
               engaging user interaction and, more importantly, an elegant design
               that captivates visitors—one that invites exploration rather than
-              mere functionality. <br /> <br /> However, elegance alone is not
-              enough. A truly effective website must strike a delicate balance:
-              it should impress and inspire curiosity without overshadowing its
-              primary purpose. For black cube, that meant ensuring the focus
-              remained on its credibility, expertise, and services, rather than
-              just aesthetics. The goal was not simply to create a visually
-              stunning website but to craft a digital presence that seamlessly
-              blends beauty with purpose—a platform that enhances marketing
-              efforts while maintaining clarity, professionalism, and ease of
-              access for clients.
+              mere functionality. <br /> <br />{" "}
+              <span className="hidden sm:block">
+                However, elegance alone is not enough. A truly effective website
+                must strike a delicate balance: it should impress and inspire
+                curiosity without overshadowing its primary purpose. For black
+                cube, that meant ensuring the focus remained on its credibility,
+                expertise, and services, rather than just aesthetics. The goal
+                was not simply to create a visually stunning website but to
+                craft a digital presence that seamlessly blends beauty with
+                purpose—a platform that enhances marketing efforts while
+                maintaining clarity, professionalism, and ease of access for
+                clients.
+              </span>
             </p>
           </motion.div>
         </motion.div>

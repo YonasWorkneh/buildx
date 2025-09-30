@@ -7,11 +7,13 @@ export default function Highlight() {
   const img1 = useRef(null);
   const img2 = useRef(null);
   const img3 = useRef(null);
+  const img4 = useRef(null);
   const home = useRef<HTMLVideoElement>(null);
   const serviceRef = useRef<HTMLVideoElement>(null);
   const img1InView = useInView(img1, { once: true, margin: "-150px 0px" });
   const img2InView = useInView(img2, { once: true, margin: "-150px 0px" });
   const img3InView = useInView(img3, { once: true, margin: "-150px 0px" });
+  const img4InView = useInView(img4, { once: true, margin: "-150px 0px" });
   const vid1InView = useInView(img1, { margin: "-150px 0px" });
   const vid2InView = useInView(img2, { margin: "-150px 0px" });
 
@@ -70,6 +72,41 @@ export default function Highlight() {
           ref={img3}
           initial="initial"
           animate={img3InView ? "enter" : "initial"}
+          variants={scaleUp()}
+          className="flex justify-between items-center gap-10 border border-white/10 rounded-xl mt-20 p-6 sm:p-10 sm:px-16 overflow-scroll scrollbar-hide bg-[radial-gradient(circle_farthest-side_at_50%_0,#00000080,#0000)]"
+        >
+          <Image
+            src={"/img/bcho.png"}
+            alt="home-page"
+            width={500}
+            height={200}
+            className={` w-[550px] h-[350px] md:w-[550px] md:h-[580px] ${
+              img3InView ? "opacity-90" : "opacity-70"
+            } -translate-y-8`}
+          />
+          <Image
+            src={"/img/services.png"}
+            alt="home-page"
+            width={1000}
+            height={200}
+            className={` w-[550px] h-[350px] md:w-[550px] md:h-[580px] mt-14 ${
+              img3InView ? "opacity-90" : "opacity-70"
+            }`}
+          />
+          <Image
+            src={"/img/menu.png"}
+            alt="home-page"
+            width={1000}
+            height={200}
+            className={`w-[550px] h-[350px] md:w-[550px] md:h-[580px] translate-y-16 ${
+              img3InView ? "opacity-90" : "opacity-70"
+            }`}
+          />
+        </motion.div>
+        <motion.div
+          ref={img4}
+          initial="initial"
+          animate={img4InView ? "enter" : "initial"}
           variants={scaleUp()}
         >
           <Image
