@@ -64,6 +64,7 @@ export const projects = [
   },
   {
     src: "/img/raja.png",
+    url: "https://rajagiri.vercel.app/",
     framework: "NextJS",
     platform: "Web App",
     purpose: "Medical care",
