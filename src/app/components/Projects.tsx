@@ -128,7 +128,7 @@ export default function Projects() {
                   className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] text-white/60"
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1njOymdCC5bwDCE7kRhNtdehKfwHYed1U/view?usp=sharing",
+                      "https://drive.google.com/file/d/1_kFjMpsEC9-W8pz29T5spCs2UNbliwG4/view?usp=sharing",
                       "_blank"
                     )
                   }
