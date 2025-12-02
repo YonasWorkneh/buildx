@@ -413,9 +413,9 @@ function Keypad() {
   return (
     <>
       <StatusBar />
-      <div className="grid grid-rows-[auto_1fr_auto] h-[500px] xsm:min-h-[calc(100vh-140px)]">
+      <div className="grid grid-rows-[auto_1fr_auto] h-[670px] xsm:min-h-[calc(100vh-140px)]">
         {/* Display */}
-        <div className="flex flex-col items-center justify-end mt-14 h-24">
+        <div className="flex flex-col items-center justify-end mt-[0.5rem] h-24">
           <p className="text-3xl tracking-wider font-medium tabular-nums h-9 flex items-center">
             {dial ? formatDial(dial) : ""}
           </p>
