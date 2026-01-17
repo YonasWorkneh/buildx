@@ -162,10 +162,10 @@ function Hero() {
 
             <div className="mt-[10rem] sm:mt-6 md:mt-[8rem]">
               <p className="text-base sm:text-xl md:text-2xl text-white text-right">
-                Senior Frontend @ YBS Software.
+                Senior React Native Developer @ Horizon Tech.
                 <br />
                 <span className="text-base sm:text-lg md:text-xl text-gray-400 text-right">
-                  Formerly at Pluto Technologies.
+                  Formerly at YBS Market.
                 </span>
               </p>
             </div>
