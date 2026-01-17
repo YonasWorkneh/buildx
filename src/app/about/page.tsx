@@ -30,6 +30,7 @@ export default function Page() {
   const section9 = useScrollAnimation();
   const section10 = useScrollAnimation();
   const experienceTitle = useScrollAnimation();
+  const experience0 = useScrollAnimation();
   const experience1 = useScrollAnimation();
   const experience2 = useScrollAnimation();
   const experience3 = useScrollAnimation();
@@ -195,6 +196,33 @@ export default function Page() {
             </motion.h1>
             <div>
               <motion.h2
+                ref={experience0.ref}
+                {...fadeIn(experience0.isInView, 0.5)}
+                className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
+              >
+                Horizon Tech
+              </motion.h2>
+              <motion.a
+                {...fadeIn(experience0.isInView, 0.7)}
+                href="https://www.horizontechict.com/"
+                target="_blank"
+                className="text-sm text-[#ffffffd5] cursor-pointer underline decoration-white flex gap-1 items-center"
+              >
+                horizontechict.com
+                <ArrowUpRight size={14} />
+              </motion.a>
+            </div>
+            <motion.div {...fadeIn(experience0.isInView, 0.6)}>
+              <h3 className="text-[18px] md:text-[30px] font-semibold">
+                Senior React Native Developer
+              </h3>
+              <p className="text-[#ffffff81]">09/&apos;25 - Present</p>
+              <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
+                Currently developing a courier platform connecting millions of users across east africa.
+              </p>
+            </motion.div>
+            <div>
+              <motion.h2
                 ref={experience1.ref}
                 {...fadeIn(experience1.isInView, 0.5)}
                 className="text-[24px] font-semibold md:my-0 md:mb-0 my-10 mb-2 md:text-[40px]"
@@ -215,10 +243,10 @@ export default function Page() {
               <h3 className="text-[18px] md:text-[30px] font-semibold">
                 Senior Front-End Developer
               </h3>
-              <p className="text-[#ffffff81]">07/&apos;24 - Present</p>
+              <p className="text-[#ffffff81]">05/&apos;25 - 10/&apos;25</p>
               <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
-                I am leading a group of talented front-end developers and
-                currently working on an e-commerce platform.
+                I led a group of talented front-end developers and
+               developed an e-commerce platform.
               </p>
             </motion.div>
             <div>
@@ -245,7 +273,7 @@ export default function Page() {
               <p className="text-[#ffffff81]">04/&apos;22 - 05/&apos;24</p>
               <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
                 I have spent much of my career here honing my skills and growing
-                as a developer.
+                as a full-stack developer.
               </p>
             </motion.div>
             <motion.h2

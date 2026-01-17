@@ -59,81 +59,13 @@ export default function Header() {
   return (
     <>
       <header
-        className="flex justify-between items-center p-4 sm:p-6 md:p-8 fixed w-full z-[20000]"
+        className="flex items-center p-4 sm:p-6 md:p-8 fixed w-full z-[20000] sm:justify-center"
         // style={{ backdropFilter: "blur(5px)" }}
       >
-        <div className="hidden sm:block">
-          <h1 className="font-medium font-michroma text-[12px] sm:text-[13px] md:text-[14px] tracking-[2px]">
-            Yonas Workneh
-          </h1>
-          <p className="text-gray-400 font-michroma text-[8px] sm:text-[9px] md:text-[10px] text-center mt-0.5 sm:mt-1">
-            Software Engineer
-          </p>
-        </div>
-
-        {/* Center nav on mobile, right on larger screens */}
-        <div className="absolute left-1/2 -translate-x-1/2 sm:static sm:translate-x-0">
-          <nav className="flex gap-0.5 sm:gap-1 bg-[#2c2c2c7f] rounded-full p-[2px] sm:p-[3px] md:p-[4px] py-[4px] sm:py-[5px] md:py-[7px] backdrop-blur-lg hover:bg-[#3a3a3a51] relative border border-[#ffffff09]">
-            <Link
-              href={"/"}
-              className={`projects group/item px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-michroma tracking-widest text-xs sm:text-sm`}
-              ref={projects}
-              onMouseEnter={handleHover}
-            >
-              Projects
-            </Link>
-            <Link
-              href={"/about"}
-              className={`about group/item px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-michroma text-xs sm:text-sm`}
-              ref={about}
-              onMouseEnter={handleHover}
-            >
-              About
-            </Link>
-            {/* spotlight */}
-            <div
-              className={`absolute bg-white h-[1px] sm:h-[1.5px] md:h-[2px] shadow-white -top-0 transition-all duration-500 ease-in ${
-                pathName.includes("about")
-                  ? "right-8 sm:right-9 md:right-10 w-3 sm:w-3.5 md:w-4"
-                  : "left-[40px] sm:left-[45px] md:left-[55px] w-[14px] sm:w-[16px] md:w-[18px]"
-              }`}
-            ></div>
-            {/* box  */}
-            <div
-              className={`active highlight bg-[#3C3C3C] h-[80%] rounded-full absolute top-0 -z-10 mt-[3px] sm:mt-[4px] md:mt-[5px] ${
-                pathName.includes("about")
-                  ? "right-0.5 sm:right-0.75 md:right-1 w-[76px] sm:w-[90px] md:w-[100px]"
-                  : "left-0.5 sm:left-0.75 md:left-1 w-[96px] sm:w-[105px] md:w-[120px]"
-              }`}
-            ></div>
-          </nav>
-        </div>
-
-        <div className="hidden sm:flex items-center gap-4 sm:gap-6 md:gap-8 ml-2 sm:ml-3 md:ml-4">
-          <div className="flex items-center gap-3 sm:gap-4">
-            <Link
-              href="https://www.linkedin.com/in/yonas-workneh/"
-              target="_blank"
-              className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] sm:text-xs font-michroma tracking-[1px]"
-            >
-              LinkedIn
-              <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4" />
-            </Link>
-            <Link
-              href="https://drive.google.com/file/d/1_kFjMpsEC9-W8pz29T5spCs2UNbliwG4/view?usp=sharing"
-              target="_blank"
-              className="flex items-center gap-1 hover:text-gray-300 transition-colors text-[10px] sm:text-xs font-michroma tracking-[2px]"
-            >
-              Resume
-              <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4" />
-            </Link>
-          </div>
-        </div>
-
-        {/* Mobile menu button */}
+        {/* Mobile menu button - left side */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="sm:hidden flex items-center justify-center w-[44px] h-[44px] rounded-full bg-[#2c2c2c7f] backdrop-blur-lg border border-[#ffffff09] relative z-[20000]"
+          className="sm:hidden flex items-center justify-center w-[44px] h-[44px] rounded-full bg-[#2c2c2c7f] backdrop-blur-lg border border-[#ffffff09] relative z-[20000] flex-shrink-0"
         >
           <motion.div
             className="relative w-6 h-6 flex flex-col justify-center gap-1.5 left-0"
@@ -188,6 +120,44 @@ export default function Header() {
             />
           </motion.div>
         </button>
+
+        {/* Center nav container - takes remaining space and centers nav on mobile, centered on larger screens */}
+        <div className="flex-1 flex justify-center sm:flex-none">
+          <nav className="flex gap-0.5 sm:gap-1 bg-[#2c2c2c7f] rounded-full p-[2px] sm:p-[3px] md:p-[4px] py-[4px] sm:py-[5px] md:py-[7px] backdrop-blur-lg hover:bg-[#3a3a3a51] relative border border-[#ffffff09]">
+            <Link
+              href={"/"}
+              className={`projects group/item px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-michroma tracking-widest text-xs sm:text-sm`}
+              ref={projects}
+              onMouseEnter={handleHover}
+            >
+              Projects
+            </Link>
+            <Link
+              href={"/about"}
+              className={`about group/item px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-michroma text-xs sm:text-sm`}
+              ref={about}
+              onMouseEnter={handleHover}
+            >
+              About
+            </Link>
+            {/* spotlight */}
+            <div
+              className={`absolute bg-white h-[1px] sm:h-[1.5px] md:h-[2px] shadow-white -top-0 transition-all duration-500 ease-in ${
+                pathName.includes("about")
+                  ? "right-8 sm:right-9 md:right-10 w-3 sm:w-3.5 md:w-4"
+                  : "left-[40px] sm:left-[45px] md:left-[55px] w-[14px] sm:w-[16px] md:w-[18px]"
+              }`}
+            ></div>
+            {/* box  */}
+            <div
+              className={`active highlight bg-[#3C3C3C] h-[80%] rounded-full absolute top-0 -z-10 mt-[3px] sm:mt-[4px] md:mt-[5px] ${
+                pathName.includes("about")
+                  ? "right-0.5 sm:right-0.75 md:right-1 w-[76px] sm:w-[90px] md:w-[100px]"
+                  : "left-0.5 sm:left-0.75 md:left-1 w-[96px] sm:w-[105px] md:w-[120px]"
+              }`}
+            ></div>
+          </nav>
+        </div>
       </header>
 
       {/* Mobile Menu */}
