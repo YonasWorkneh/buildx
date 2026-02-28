@@ -4,7 +4,7 @@ export default function Overview() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
-        <div>
+        {/* <div>
           <h1 className="text-white text-xl font-tenor mb-2">My Role</h1>
           <p>
             <span className="text-white font-tenor">
@@ -15,7 +15,7 @@ export default function Overview() {
               visual design and implementation.
             </span>
           </p>
-        </div>
+        </div> */}
         <div className="mt-4">
           <h1 className="text-white text-xl font-tenor mb-2">Team</h1>{" "}
           <p className=" text-white/40 font-tenor text-md">
