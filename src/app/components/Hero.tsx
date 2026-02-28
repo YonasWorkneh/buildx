@@ -160,15 +160,15 @@ function Hero() {
               </motion.span>
             </h2>
 
-            {/* <div className="mt-[10rem] sm:mt-6 md:mt-[8rem]">
+            <div className="mt-[10rem] sm:mt-6 md:mt-[8rem]">
               <p className="text-base sm:text-xl md:text-2xl text-white text-right">
-                Senior React Native Developer @ Horizon Tech.
+                Building innovative software solutions.
                 <br />
                 <span className="text-base sm:text-lg md:text-xl text-gray-400 text-right">
-                  Formerly at YBS Market.
+                  Specializing in web & mobile development.
                 </span>
               </p>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-200">

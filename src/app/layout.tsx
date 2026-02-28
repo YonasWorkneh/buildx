@@ -1,9 +1,7 @@
 "use client";
 
 import "./globals.css";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import SocialSidebar from "./components/SocialSidebar";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import { usePathname } from "next/navigation";
@@ -49,8 +47,6 @@ export default function RootLayout({
                 <Loader />
               ) : (
                 <>
-                  {/* {!pathName.includes("about") && <SocialSidebar />} */}
-                  {!pathName.includes("projects") && <Header />}
                   <AnimatePresence mode="wait">
                     <motion.div
                       onHoverStart={handleHoverStart}

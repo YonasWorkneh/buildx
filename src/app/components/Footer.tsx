@@ -87,9 +87,6 @@ export default function Footer() {
               <Link href={"/"} className="text-white/70 hover:text-white  ">
                 Projects
               </Link>
-              <Link href={"/about"} className="text-white/70 hover:text-white">
-                About
-              </Link>
             </div>
 
             <div>
