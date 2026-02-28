@@ -83,7 +83,7 @@ export default function SocialSidebar() {
     },
   ];
 
-  const name = "Yonas  _  Workneh";
+  const name = "BuildX";
 
   return (
     <aside className="hidden lg:flex fixed left-0 top-0 h-full z-[19999] items-center">
@@ -166,7 +166,7 @@ export default function SocialSidebar() {
               {name}
             </span>
             <span className="text-white/60 text-[10px] font-michroma tracking-widest uppercase whitespace-nowrap word-spacing-widest">
-              Software Engineer
+              Software Engineering
             </span>
           </div>
         </motion.div>

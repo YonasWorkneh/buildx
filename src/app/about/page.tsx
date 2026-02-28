@@ -52,7 +52,7 @@ export default function Page() {
             textShadow: "0px 0px 20px #ffffff39",
           }}
         >
-          I&apos;m passionate about crafting visually stunning, memorable
+          We&apos;re passionate about crafting visually stunning, memorable
           digital experiences.
         </motion.h2>
         <div className="block lmd:grid lmd:grid-cols-2 my-10 lg:my-28">
@@ -81,14 +81,14 @@ export default function Page() {
           >
             <div className="lmd:w-[350px] px-4 mt-20 lg:mt:0 lg:-mt-12 lg:w-[400px] 2xl:w-[600px]">
               <h3 className="lg:text-[18px] 2xl:text-xl font-semibold">
-                My background in Software development
+                Our background in Software development
               </h3>
               <p className="mt-5 text-[#ffffff81] text-[14px] 2xl:text-[18px]">
-                I started coding during the COVID lockdown, just looking for
+                We started coding during the COVID lockdown, just looking for
                 something to do. What began as an escape from boredom quickly
-                turned into a passion before I even knew it. Each line of code
-                pulled me deeper into the world of problem-solving. That spark
-                led me to study Software Engineering at Addis Ababa Science &
+                turned into a passion before we even knew it. Each line of code
+                pulled us deeper into the world of problem-solving. That spark
+                led us to study Software Engineering at Addis Ababa Science &
                 Technology University — and I’ve been building ever since.
               </p>
             </div>
@@ -112,10 +112,10 @@ export default function Page() {
             </h3>
             <p className="mt-5 text-[#ffffff81] mb-10 text-[14px] 2xl:text-[18px]">
               Hackathons have been more than competitions — Each challenge
-              sharpened my skills, fueled my passion, and reminded me why I love
+              sharpened our skills, fueled our passion, and reminded us why we love
               building solutions that matter. <br /> <br /> Inclufi, a
               decentralized peer-to-peer lending platform powered by the XRP
-              Ledger (XRPL), got me and my team this award at the 2024 Gresfet
+              Ledger (XRPL), got our team this award at the 2024 Gresfet
               hackathon organized by Organization for Southern Cooperation
               bringing together countries from all across global south.
             </p>
@@ -144,10 +144,10 @@ export default function Page() {
               Hobbies & Interests
             </h3>
             <p className="mt-5 text-[#ffffff81] mb-10 2xl:text-[18px] text-[14px]">
-              When I&apos;m not coding, you&apos;ll often find me exploring new
-              places, diving into a good book, or sharpening my skills over a
-              game of competitive chess—a passion that&apos;s been close to my
-              heart for years.
+              When we&apos;re not coding, you&apos;ll often find us exploring new
+              places, diving into a good book, or sharpening our skills over a
+              game of competitive chess—a passion that&apos;s been close to our
+              hearts for years.
             </p>
           </motion.div>
           <motion.div
@@ -171,11 +171,11 @@ export default function Page() {
               </span>
             </h3>
             <p className="mt-5 text-[#ffffff81] mb-10 2xl:text-[18px] text-[14px]">
-              Back in 2024, I had the honor of captaining my university chess
-              team in the finals — a proud and defining moment in my journey
-              both as a player and a leader. That same year, I also received
-              official recognition from FIDE and earned my first international
-              rating, marking a major milestone in my competitive chess career.
+              Back in 2024, we had the honor of captaining our university chess
+              team in the finals — a proud and defining moment in our journey
+              both as players and leaders. That same year, we also received
+              official recognition from FIDE and earned our first international
+              rating, marking a major milestone in our competitive chess career.
             </p>
             <motion.div
               ref={section10.ref}
@@ -245,7 +245,7 @@ export default function Page() {
               </h3>
               <p className="text-[#ffffff81]">05/&apos;25 - 10/&apos;25</p>
               <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
-                I led a group of talented front-end developers and
+                We led a group of talented front-end developers and
                developed an e-commerce platform.
               </p>
             </motion.div>
@@ -272,8 +272,8 @@ export default function Page() {
               </h3>
               <p className="text-[#ffffff81]">04/&apos;22 - 05/&apos;24</p>
               <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
-                I have spent much of my career here honing my skills and growing
-                as a full-stack developer.
+                We have spent much of our career here honing our skills and growing
+                as full-stack developers.
               </p>
             </motion.div>
             <motion.h2
@@ -289,7 +289,7 @@ export default function Page() {
               </h3>
               <p className="text-[#ffffff81]">04/&apos;21 - 06/&apos;22</p>
               <p className="text-[#ffffffd5] mt-4 text-sm md:text-base md:w-2/3">
-                I have completed 10+ projects during this phase of my carrer.
+                We have completed 10+ projects during this phase of our career.
                 <a
                   href="https://blackcube.com"
                   className="text-white underline mx-2"
@@ -297,7 +297,7 @@ export default function Page() {
                 >
                   blackcube
                 </a>
-                was one I was most proud of.
+                was one we were most proud of.
               </p>
             </motion.div>
             <motion.div
@@ -310,7 +310,7 @@ export default function Page() {
               </p>
               <Image
                 src={"/img/sign.png"}
-                alt="Yonas Workneh Signature"
+                alt="BuildX Signature"
                 width={100}
                 height={100}
                 className="w-32 h-14 mt-5"

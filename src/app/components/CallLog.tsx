@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 const callFilters = ["all", "missed"];
-const contacts = [{ name: "Yonas Workneh", phone: "+251986261979" }];
+const contacts = [{ name: "BuildX", phone: "+251986261979" }];
 
 export default function CallLog({
   onClose,

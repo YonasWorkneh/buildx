@@ -219,10 +219,10 @@ export default function Header() {
                   className="flex flex-col items-center gap-1"
                 >
                   <h1 className="font-medium font-michroma text-lg tracking-[2px]">
-                    Yonas Workneh
+                    BuildX
                   </h1>
                   <p className="text-gray-400 font-michroma text-sm">
-                    Software Engineer
+                    Software Engineering
                   </p>
                 </motion.div>
               </div>

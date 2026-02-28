@@ -18,7 +18,7 @@ import StackedCards from "./StackedCards";
 // import Image from "next/image";
 
 export default function Projects() {
-  const [url, setUrl] = useState("yonasw.dev");
+  const [url, setUrl] = useState("buildx.dev");
   const [hideTabContent, setHideTabContent] = useState(false);
 
   const [tab, setTab] = useState(0);
@@ -29,7 +29,7 @@ export default function Projects() {
       setUrl("");
     } else {
       setHideTabContent(false);
-      setUrl("yonasw.dev");
+      setUrl("buildx.dev");
     }
   }, [tab]);
 
@@ -72,7 +72,7 @@ export default function Projects() {
                 onChange={(e) => {
                   setUrl(e.target.value);
                   console.log(url);
-                  if (e.target.value === "yonasw.dev") {
+                  if (e.target.value === "buildx.dev") {
                     setHideTabContent(false);
                   }
                 }}
@@ -98,10 +98,10 @@ export default function Projects() {
           <header className="flex justify-between items-center p-8 w-full top-0 z-50 sticky bg-transparent">
             <div>
               <h1 className="font-medium text-white/60 font-michroma text-xs">
-                Yonas Workneh
+                BuildX
               </h1>
               <p className="text-gray-400 font-michroma text-xs">
-                Software Engineer
+                Software Engineering
               </p>
             </div>
 

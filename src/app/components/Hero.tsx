@@ -116,7 +116,7 @@ function Hero() {
 
           <div className="mt-4 sm:mt-6 md:mt-8 p-4 sm:p-8 md:p-14">
             <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-[70px] 2xl:text-[100px] tracking-wider font-medium leading-tight">
-              I design & develop
+              We design & develop
               <br />
               interactive{" "}
               <motion.span
@@ -160,7 +160,7 @@ function Hero() {
               </motion.span>
             </h2>
 
-            <div className="mt-[10rem] sm:mt-6 md:mt-[8rem]">
+            {/* <div className="mt-[10rem] sm:mt-6 md:mt-[8rem]">
               <p className="text-base sm:text-xl md:text-2xl text-white text-right">
                 Senior React Native Developer @ Horizon Tech.
                 <br />
@@ -168,7 +168,7 @@ function Hero() {
                   Formerly at YBS Market.
                 </span>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-200">

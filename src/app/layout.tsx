@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Yonas Workneh &mdash; Software Engineer</title>
+        <title>BuildX &mdash; Software Engineering</title>
       </head>
       <body>
         <PhoneContextProvider>
@@ -49,7 +49,7 @@ export default function RootLayout({
                 <Loader />
               ) : (
                 <>
-                  {!pathName.includes("about") && <SocialSidebar />}
+                  {/* {!pathName.includes("about") && <SocialSidebar />} */}
                   {!pathName.includes("projects") && <Header />}
                   <AnimatePresence mode="wait">
                     <motion.div
